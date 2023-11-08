@@ -1,0 +1,32 @@
+import { Brand } from './Brand.type';
+import { Comment } from './Comment.type';
+import { SaleLabel } from './SaleLabel.type';
+import { Size } from './Size.type';
+import { Tag } from './Tag.type';
+
+export type Product = {
+  id: number;
+  url: string;
+  thumbnail: string;
+  name: string;
+  price: number;
+  oldPrice: number | null;
+  statusTitle: string;
+  isTop: boolean;
+  discountPercent: number | null;
+  likes: number;
+  isLiked: boolean;
+  __typename: string;
+  brand: Brand | null;
+  catalogSlug: string;
+  isNew: boolean;
+  sizes: Size[];
+  saleLabel: SaleLabel;
+  freeDeliveryServices: boolean | null;
+  isUkrainian: boolean;
+  ownerHasRecentActivity: boolean;
+  tags: Tag[];
+  rating: number | null;
+  ratingAmount: number | null;
+  comments: Comment[];
+};

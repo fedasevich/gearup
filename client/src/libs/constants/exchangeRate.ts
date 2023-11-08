@@ -1,0 +1,1 @@
+export const USD_TO_UAH_EXCHANGE_RATE = 36.49;
