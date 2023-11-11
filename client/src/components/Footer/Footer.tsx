@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <>
       <div className="mb-4 mt-10 flex items-center justify-center">
-        <div className="px-4 md:w-10/12 md:px-0 xl:w-3/5">
+        <div className="2 px-4 md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:gap-0">
             <div className="">
               <div className="flex flex-col items-center justify-center gap-5 md:flex-row ">

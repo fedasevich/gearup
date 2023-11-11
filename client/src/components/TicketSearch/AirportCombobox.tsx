@@ -1,4 +1,4 @@
-import { Check, ChevronsUpDown } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -8,13 +8,26 @@ import { cn } from '@/libs/helpers/cn';
 import { useDebounce } from '@/libs/hooks/useDebounce';
 import { Airport } from '@/libs/types/Airport/Airport.type';
 import { airportApi } from '@/store/reducers/airport/AirportApi';
-import { useSearchParams } from 'react-router-dom';
+import { useFormContext } from 'react-hook-form';
+import { TicketSearchFormData } from './TicketSearch';
 
-export function AirportCombobox() {
+interface AirportComboboxProps {
+  destination: string;
+  field: keyof TicketSearchFormData;
+}
+
+export function AirportCombobox({ destination, field }: AirportComboboxProps) {
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState('');
   const [search, setSearch] = useState('');
   const [airports, setAirports] = useState<Airport[]>([]);
+
+  const {
+    watch,
+    setValue: onIcaoChange,
+    formState: { errors }
+  } = useFormContext();
+
+  const icao = watch(field);
 
   const debouncedValue = useDebounce<string>(search, 500);
 
@@ -23,14 +36,10 @@ export function AirportCombobox() {
   };
 
   const [airportAutocomplete] = airportApi.useLazyAirportAutocompleteQuery();
-  const [_searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    if (!debouncedValue.length) return;
-    setSearchParams((prev) => {
-      prev.set('query', debouncedValue);
-      return prev;
-    });
+    if (!debouncedValue.length) return setAirports([]);
+
     airportAutocomplete(debouncedValue)
       .unwrap()
       .then((data) => {
@@ -38,30 +47,64 @@ export function AirportCombobox() {
       });
   }, [debouncedValue]);
 
+  useEffect(() => {
+    if (!icao) return;
+    airportAutocomplete(icao)
+      .unwrap()
+      .then((data) => {
+        setAirports(data);
+      });
+  }, [icao]);
+
+  const handleSelect = (currentValue: string) => {
+    const [icao] = currentValue.split('.');
+    onIcaoChange(field, icao);
+    setOpen(false);
+  };
+
+  const foundAirportByIcao = icao ? airports.find((airport) => airport.icao === icao.toUpperCase())?.name : null;
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
-          {value ? airports.find((airport) => airport.name.toLowerCase() === value)?.name : 'Select framework...'}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+      <PopoverTrigger
+        asChild
+        className="mb-[2px] min-h-[56px] w-full rounded-none border-0 border-r-secondary bg-popover
+        text-black first:rounded-ss-2xl
+        first:border-r-[1px] dark:text-white
+        lg:mb-0 lg:first:rounded-s-2xl lg:odd:border-r-[1px] lg:odd:border-r-secondary
+        [&:nth-child(3)]:rounded-se-2xl lg:[&:nth-child(3)]:rounded-none
+        lg:[&:nth-child(3)]:border-r-[1px]
+        "
+      >
+        <Button
+          variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className={cn(
+            'relative flex h-auto w-full flex-row items-center justify-start px-4 py-2 text-start',
+            !!errors[field] && 'shadow-[inset_0px_0px_8px_0px_#ff0000]'
+          )}
+        >
+          <div className="flex w-full flex-col justify-between">
+            <p className="text-gray-400">{destination}</p>
+            <p className="min-h-[5]">{foundAirportByIcao || 'Оберіть аеропорт'}</p>
+          </div>
+          <p className="text-gray-400">{icao?.toUpperCase()}</p>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." onValueChange={handleValueChange} />
-          <CommandEmpty>No framework found.</CommandEmpty>
+          <CommandInput placeholder="Search airport..." onValueChange={handleValueChange} />
+          <CommandEmpty>No airport found.</CommandEmpty>
           <CommandGroup>
             {airports.map((airport) => (
               <CommandItem
                 key={airport.id}
-                value={airport.name}
-                onSelect={(currentValue) => {
-                  setValue(currentValue === value ? '' : currentValue);
-                  setOpen(false);
-                }}
+                value={`${airport.icao}.${airport.name}.${airport.city}.${airport.code}`}
+                onSelect={handleSelect}
               >
-                <Check className={cn('mr-2 h-4 w-4', value === airport.name ? 'opacity-100' : 'opacity-0')} />
-                {airport.name}
+                <Check className={cn('mr-2 h-4 w-4', icao === airport.icao ? 'opacity-100' : 'opacity-0')} />
+                {airport.name} {airport.icao}
               </CommandItem>
             ))}
           </CommandGroup>

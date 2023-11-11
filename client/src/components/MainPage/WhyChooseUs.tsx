@@ -3,7 +3,7 @@ export function WhyChooseUs() {
     <div className="my-10 px-4 md:px-0">
       <h2 className=" text-center text-3xl font-semibold">Чому обирають нас?</h2>
       <div className="flex items-center justify-center text-center">
-        <div className="flex w-10/12 flex-col justify-evenly gap-0 md:flex-row md:gap-8 xl:w-3/5">
+        <div className="2 flex w-10/12 flex-col justify-evenly gap-0 md:flex-row md:gap-8 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
           <div className="flex flex-grow flex-col items-center text-center">
             <div className="flex h-[300px] w-[200px] items-center justify-center">
               <img className="flex-grow" src="/images/illustration1.svg" alt="airplane" />

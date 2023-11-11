@@ -26,7 +26,7 @@ export class AirportService {
           },
           {
             icao: {
-              [Op.iLike]: `%${query}%`,
+              [Op.iLike]: `%${query.toUpperCase()}%`,
             },
           },
         ],
