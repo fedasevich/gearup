@@ -115,3 +115,31 @@ footer {
   font-style: normal;
   src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
 }
+
+@keyframes planeFlight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 10px);
+  }
+}
+
+@keyframes planeLineAnimation {
+  0% {
+    width: 4px;
+  }
+  100% {
+    width: calc(100% + 30px);
+  }
+}
+
+.animate-plane-flight {
+  /* left: 50%; */
+  animation: planeFlight 6s linear infinite;
+}
+
+.animate-plane-line {
+  /* width: 50%; */
+  animation: planeLineAnimation 6s linear infinite;
+}

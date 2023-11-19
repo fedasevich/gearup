@@ -1,11 +1,17 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import { api } from './api';
+import searchReducer from './reducers/SearchSlice';
 import { airportApi } from './reducers/airport/AirportApi';
 import { flightApi } from './reducers/flight/FlightApi';
+import userReducer from './reducers/user/UserSlice';
 
-// import cartReducer from './reducers/CartSlice';
-import searchReducer from './reducers/SearchSlice';
-// import userReducer from './reducers/UserSlice';
+const authPersistConfig = {
+  key: 'userReducer',
+  storage,
+  blacklist: ['user']
+};
 
 export const rootReducer = combineReducers({
   // teacherReducer,
@@ -14,6 +20,8 @@ export const rootReducer = combineReducers({
   // userReducer,
   // productReducer
   // checkOutReducer,
+  // eslint-disable-next-line no-use-before-define
+  userReducer: persistReducer(authPersistConfig, userReducer),
   searchReducer,
   // [groupApi.reducerPath]: groupApi.reducer,
   // [shopApi.reducerPath]: shopApi.reducer,
@@ -25,7 +33,12 @@ export const rootReducer = combineReducers({
 export const setupStore = () => {
   return configureStore({
     reducer: rootReducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware),
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+        }
+      }).concat(api.middleware),
     devTools: true
   });
 };

@@ -8,7 +8,7 @@ export class FlightController {
   constructor(private readonly flightService: FlightService) {}
 
   // @Get(
-  //   "/oneway/:from/:to/:departureDate/:numberOfAdults/:numberOfChildrens/:numberOfInfants/:cabinClass/:currency"
+  //   "/oneway/:from/:to/:departureDate/:numberOfAdults/:numberOfChildrens/:numberOfInfants/:cabinClass"
   // )
   // findOneway(@Param() dto: GetOnewayFlightDto) {
   //   console.log(dto);
@@ -22,7 +22,7 @@ export class FlightController {
   }
 
   @Get(
-    "/roundtrip/:from/:to/:departureDate/:arrivalDate/:numberOfAdults/:numberOfChildrens/:numberOfInfants/:cabinClass/:currency"
+    "/roundtrip/:from/:to/:departureDate/:arrivalDate/:numberOfAdults/:numberOfChildrens/:numberOfInfants/:cabinClass"
   )
   findRoundTrip(@Param() dto: GetRoundTripFlightDto) {
     console.log(dto);

@@ -29,7 +29,7 @@ export const ticketFilterFieldToReduxField: { [key: string]: 'airlines' | 'airpo
 export type Stops = 'DIRECT' | 'ONE_STOP' | 'MORE_THAN_ONE_STOP';
 
 export const stopsValues: { [K in Stops]: string } = {
-  'DIRECT': 'Прямий рейс',
-  'ONE_STOP': '1 пересадка',
-  'MORE_THAN_ONE_STOP': 'Більше ніж одна пересадка'
+  DIRECT: 'Прямий рейс',
+  ONE_STOP: '1 пересадка',
+  MORE_THAN_ONE_STOP: 'Більше ніж одна пересадка'
 };

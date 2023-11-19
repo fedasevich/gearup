@@ -28,11 +28,10 @@ function Timeline({ totalDuration, segments }: TicketCardLegTimelineProps) {
         {segments
           .filter((segment) => !!segment.stopoverDurationMinutes)
           .map((segment) => (
-            <TooltipProvider delayDuration={0}>
+            <TooltipProvider delayDuration={0} key={segment.designatorCode}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <div
-                    key={segment.designatorCode}
                     className="absolute top-[1px] h-[10px] rounded-3xl border-2 bg-secondary text-center"
                     style={calculateSegmentStyle(segment)}
                   >

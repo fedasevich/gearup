@@ -17,12 +17,16 @@ interface TicketFilteringCheckboxListProps {
 
 export function TicketFilteringRangeSlider({ code, formatLabel }: TicketFilteringCheckboxListProps) {
   const dispatch = useAppDispatch();
-  const [sliderValue, setSliderValue] = useState<StopoverDurations>({ max: 0, min: 0 });
-  const debouncedValue = useDebounce<StopoverDurations>(sliderValue, 1000);
   const state = useAppSelector((state) => state.searchReducer.filter);
+  const [sliderValue, setSliderValue] = useState<StopoverDurations>({
+    max: state?.[code]?.value?.max || 0,
+    min: state?.[code]?.value?.min || 0
+  });
+  const debouncedValue = useDebounce<StopoverDurations>(sliderValue, 1000);
 
   useEffect(() => {
-    if (!state) return;
+    if (!state || !sliderValue.min || !sliderValue.max) return;
+
     dispatch(
       setFilter({
         ...state,
@@ -34,7 +38,7 @@ export function TicketFilteringRangeSlider({ code, formatLabel }: TicketFilterin
   if (!state) {
     return null;
   }
-  const { min, max } = state[code];
+  const { min, max, value } = state[code];
 
   const handleChange = (minMaxArray: number[]) => {
     const [min, max] = minMaxArray;
@@ -47,6 +51,7 @@ export function TicketFilteringRangeSlider({ code, formatLabel }: TicketFilterin
       <AccordionContent className="px-4 pt-3 text-center">
         <Slider
           formatLabel={formatLabel}
+          value={[value.min, value.max]}
           minStepsBetweenThumbs={2}
           min={min}
           max={max}

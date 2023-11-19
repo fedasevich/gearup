@@ -14,7 +14,7 @@ export function TicketCardLegAirlineImage() {
 
   const [firstArline, restOfAirlines] = [airlineCodes.slice(0, 1)[0], airlineCodes.slice(1)];
   return (
-    <div className="flex w-2/12">
+    <div className="flex w-full justify-center lg:w-2/12">
       <LegImage code={firstArline} width={48} height={48} />
       {restOfAirlines.map((airlineCode) => (
         <div className="self-end" key={airlineCode}>

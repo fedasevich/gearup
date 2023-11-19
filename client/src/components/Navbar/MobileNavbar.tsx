@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { MAIN_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
-import { LogoIcon, UAHIcon, USDIcon } from '@/ui/icons/icons';
+import { LogoIcon } from '@/ui/icons/icons';
 
 import {
   DropdownMenu,
@@ -11,23 +11,37 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
+import { currencies } from '@/libs/constants/currencies';
+import { useAppDispatch, useAppSelector } from '@/libs/hooks/redux';
+import { UserCurrency } from '@/libs/types/User/UserCurrency.type';
+import { userApi } from '@/store/reducers/user/UserApi';
+import { setUserCurrency } from '@/store/reducers/user/UserSlice';
 import { ChevronDown, Menu, SearchSlash } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const currencies = {
-  UAH: 'Ukrainian hryvnia',
-  USD: 'United States dollar'
-};
+import { AuthPopover } from './AuthPopover';
 
 export function MobileNavbar() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const dispatch = useAppDispatch();
 
   const handleSheetClose = () => {
     setIsSheetOpen(false);
   };
 
-  const selectedCurrency = currencies.UAH;
+  const [getCurrencyRate] = userApi.useLazyGetCurrencyRateQuery();
+
+  const handleCurrencyClick = async (currency: UserCurrency, code: string) => {
+    if (currency === '$') return dispatch(setUserCurrency({ currency, rate: 1 }));
+
+    await getCurrencyRate(code)
+      .unwrap()
+      .then((data) => {
+        dispatch(setUserCurrency({ currency, rate: data.rate }));
+      });
+  };
+
+  const selectedCurrency = useAppSelector((state) => state.userReducer.userCurrency);
 
   return (
     <div className="flex items-center justify-between md:hidden">
@@ -55,18 +69,23 @@ export function MobileNavbar() {
                 <DropdownMenu>
                   <DropdownMenuTrigger className="bg-transparent" asChild>
                     <Button className="w-25 flex items-center justify-center gap-2" variant="ghost" size="icon">
-                      {selectedCurrency === currencies.UAH ? <UAHIcon /> : <USDIcon />}
+                      {currencies[selectedCurrency.currency].icon}
                       <span className="sr-only">Change currency</span>
-                      {selectedCurrency === currencies.UAH ? 'UAH' : 'USD'}
+                      {currencies[selectedCurrency.currency].code}
                       <ChevronDown size={15} />
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="ml-5">
                     {Object.values(currencies).map((item) => (
-                      <DropdownMenuItem key={item}>{item}</DropdownMenuItem>
+                      <DropdownMenuItem key={item.code} onClick={() => handleCurrencyClick(item.symbol, item.code)}>
+                        {item.label}
+                      </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <AuthPopover />
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

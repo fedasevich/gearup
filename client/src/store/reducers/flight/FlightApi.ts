@@ -9,7 +9,6 @@ interface OneWayParams {
   numberOfChildrens: number;
   numberOfInfants: number;
   cabinClass: string;
-  currency: string;
 }
 
 interface RoundTripParams extends OneWayParams {
@@ -27,9 +26,8 @@ export const flightApi = api.injectEndpoints({
     //     numberOfChildrens,
     //     numberOfInfants,
     //     cabinClass,
-    //     currency
     //   }) => ({
-    //     url: `/flight/oneway/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}/${currency}`
+    //     url: `/flight/oneway/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}}`
     //   })
     // }),
     oneWay: builder.query<Flight, unknown>({
@@ -46,10 +44,9 @@ export const flightApi = api.injectEndpoints({
         numberOfAdults,
         numberOfChildrens,
         numberOfInfants,
-        cabinClass,
-        currency
+        cabinClass
       }) => ({
-        url: `/flight/roundtrip/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${arrivalDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}/${currency}`
+        url: `/flight/roundtrip/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${arrivalDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}`
       })
     })
   })

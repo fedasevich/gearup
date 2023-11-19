@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
-import { LogoIcon, UAHIcon, USDIcon } from '@/ui/icons/icons';
+import { LogoIcon } from '@/ui/icons/icons';
 import { ChevronDown, SearchSlash } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -14,14 +13,30 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/compon
 import { MAIN_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
 import { Link } from 'react-router-dom';
 import { ModeToggle } from '../mode-toggle';
+import { AuthPopover } from './AuthPopover';
 
-const currencies = {
-  UAH: 'Ukrainian hryvnia',
-  USD: 'United States dollar'
-};
+import { currencies } from '@/libs/constants/currencies';
+import { useAppDispatch, useAppSelector } from '@/libs/hooks/redux';
+import { UserCurrency } from '@/libs/types/User/UserCurrency.type';
+import { userApi } from '@/store/reducers/user/UserApi';
+import { setUserCurrency } from '@/store/reducers/user/UserSlice';
 
 export function Navbar() {
-  const selectedCurrency = currencies.UAH;
+  const dispatch = useAppDispatch();
+
+  const [getCurrencyRate] = userApi.useLazyGetCurrencyRateQuery();
+
+  const handleCurrencyClick = async (currency: UserCurrency, code: string) => {
+    if (currency === '$') return dispatch(setUserCurrency({ currency, rate: 1 }));
+
+    await getCurrencyRate(code)
+      .unwrap()
+      .then((data) => {
+        dispatch(setUserCurrency({ currency, rate: data.rate }));
+      });
+  };
+
+  const selectedCurrency = useAppSelector((state) => state.userReducer.userCurrency);
 
   return (
     <>
@@ -43,17 +58,17 @@ export function Navbar() {
               <NavigationMenuItem className="hidden md:block">
                 <DropdownMenu>
                   <DropdownMenuTrigger className="bg-transparent" asChild>
-                    <Button className="w-25 flex items-center justify-center gap-2 px-2" variant="ghost" size="icon">
-                      {selectedCurrency === currencies.UAH ? <UAHIcon /> : <USDIcon />}
+                    <Button className="w-25 flex items-center justify-center gap-2" variant="ghost" size="icon">
+                      {currencies[selectedCurrency.currency].icon}
                       <span className="sr-only">Change currency</span>
-                      {selectedCurrency === currencies.UAH ? 'UAH' : 'USD'}
+                      {currencies[selectedCurrency.currency].code}
                       <ChevronDown size={15} />
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     {Object.values(currencies).map((item) => (
-                      <DropdownMenuItem key={item} onClick={() => {}}>
-                        {item}
+                      <DropdownMenuItem key={item.code} onClick={() => handleCurrencyClick(item.symbol, item.code)}>
+                        {item.label}
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
@@ -61,6 +76,9 @@ export function Navbar() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <ModeToggle />
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <AuthPopover />
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

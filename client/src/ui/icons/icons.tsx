@@ -10,6 +10,8 @@ import { ReactComponent as Mastercard } from '#assets/icons/mastercard.svg';
 
 import { ReactComponent as Visa } from '#assets/icons/visa.svg';
 
+import { ReactComponent as Airplane } from '#assets/icons/airplane.svg';
+
 import { ReactComponent as X } from '#assets/icons/x.svg';
 
 export function LogoIcon() {
@@ -38,4 +40,8 @@ export function VisaIcon() {
 
 export function XIcon() {
   return <X />;
+}
+
+export function AirplaneIcon() {
+  return <Airplane />;
 }

@@ -1,14 +1,19 @@
+import { SearchPageLoader } from '@/components/SearchPage/SearchPageLoader';
 import { TicketCard } from '@/components/TicketCard/TicketCard';
 import { useMergedTicketsData } from '@/components/TicketCard/useMergedTicketsData';
 import { TicketFiltering } from '@/components/TicketFiltering/TicketFiltering';
 import { applyFilters, prepareInitialFilterState } from '@/components/TicketFiltering/helpers';
 import { TicketSearchFormData } from '@/components/TicketSearchBar/TicketSearch';
+import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { MAIN_ROUTE } from '@/libs/constants/routes';
 import { useAppDispatch, useAppSelector } from '@/libs/hooks/redux';
 import { setAirlines, setAirports, setFilter, setSearchData, setStops } from '@/store/reducers/SearchSlice';
 import { flightApi } from '@/store/reducers/flight/FlightApi';
 import { format } from 'date-fns';
-import { useEffect, useMemo } from 'react';
+import { SlidersHorizontal } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 
 export default function SearchPage() {
@@ -19,6 +24,7 @@ export default function SearchPage() {
   const searchData = useAppSelector((state) => state.searchReducer.searchData);
   const [oneWayQuery, { isLoading: oneWayLoading }] = flightApi.useLazyOneWayQuery();
   const [roundTripQuery, { isLoading: roundTripLoading }] = flightApi.useLazyRoundTripQuery();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   if (state === null) {
     return <Navigate to={MAIN_ROUTE} />;
@@ -31,8 +37,7 @@ export default function SearchPage() {
   useEffect(() => {
     const baseRequestData = {
       ...state,
-      departureDate: format(departureDate, 'yyyy-mm-dd'),
-      currency: 'UAH'
+      departureDate: format(departureDate, 'yyyy-mm-dd')
     };
 
     if (arrivalDate) {
@@ -59,18 +64,37 @@ export default function SearchPage() {
   const filteredSearchData = useMemo(() => applyFilters(filter, searchData), [filter]);
 
   if (isLoading) {
-    return 'loading';
+    return <SearchPageLoader />;
   }
 
   return (
     <div className="mb-4 mt-10 flex items-center justify-center">
-      <div className="2 px-4 md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
+      <div className="2 w-full px-4  md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:gap-4">
-          {isLoading && 'loading'}
-          <div className="w-3/12">
-            <TicketFiltering />
+          {!isSheetOpen && (
+            <div className="hidden w-3/12 xl:block">
+              <TicketFiltering />
+            </div>
+          )}
+          <div className="xl:hidden">
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="secondary"
+                  className="fixed bottom-5 left-1/2 flex -translate-x-1/2 -translate-y-1/2  transform gap-3 font-medium"
+                >
+                  <SlidersHorizontal size={20} />
+                  Фільтри
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="flex w-full flex-col items-start justify-center">
+                <ScrollArea className="mt-6 w-full ">
+                  <TicketFiltering />
+                </ScrollArea>
+              </SheetContent>
+            </Sheet>
           </div>
-          <div className="w-9/12 ">
+          <div className="w-full xl:w-9/12 ">
             {filteredSearchData.map((ticket) => (
               <TicketCard ticket={ticket} key={ticket.id} />
             ))}

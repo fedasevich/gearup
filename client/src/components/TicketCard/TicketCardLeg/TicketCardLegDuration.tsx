@@ -6,12 +6,11 @@ export function TicketCardLegDuration() {
     leg: { departureTime, arrivalTime, durationMinutes, segments, departureAirportCode, arrivalAirportCode }
   } = useTicketCardLegContext();
 
-  console.log(segments);
   return (
-    <div className="flex w-5/12 flex-col justify-between">
+    <div className="flex w-8/12 flex-col justify-between  lg:w-5/12">
       <div className="flex justify-between">
-        <p className="text-base font-semibold">{departureTime}</p>
-        <p className="text-base font-semibold">{arrivalTime}</p>
+        <p className="text-base font-semibold text-black dark:text-white ">{departureTime}</p>
+        <p className="text-base font-semibold text-black dark:text-white ">{arrivalTime}</p>
       </div>
       <Timeline totalDuration={durationMinutes} segments={segments} />
       <div className="flex  justify-between">

@@ -12,7 +12,7 @@ export function TicketCardLegAirlineName() {
 
   const firstArline = airlineCodes[0];
   return (
-    <div className="flex w-3/12">
+    <div className="flex w-full justify-center lg:w-3/12 lg:justify-start">
       <p>{airlines[firstArline].name}</p>
     </div>
   );
