@@ -1,5 +1,6 @@
-import { MAIN_ROUTE, SUPPORT_ROUTE } from './libs/constants/routes';
+import { MAIN_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from './libs/constants/routes';
 import MainPage from './pages/MainPage';
+import SearchPage from './pages/SearchPage';
 import { SupportPage } from './pages/SupportPage';
 
 export const publicRoutes = [
@@ -10,6 +11,10 @@ export const publicRoutes = [
   {
     path: SUPPORT_ROUTE,
     Component: SupportPage
+  },
+  {
+    path: SEARCH_ROUTE,
+    Component: SearchPage
   }
   // {
   //   path: SHOP_ROUTE_CATEGORY,

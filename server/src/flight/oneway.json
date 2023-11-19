@@ -1,0 +1,3952 @@
+{
+  "legs": [
+    {
+      "id": "PRG-CDG:W92603~25:U22435~26:0",
+      "departureTime": "22:10",
+      "arrivalTime": "09:30",
+      "duration": "11h 20m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["W9", "U2"],
+      "stopoverAirportCodes": ["LTN"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 1330,
+      "arrivalTimeMinutes": 570,
+      "departureDateTime": "2023-12-25T22:10:00.000+01:00",
+      "arrivalDateTime": "2023-12-26T09:30:00.000+01:00",
+      "stopoverDurationMinutes": 480,
+      "durationMinutes": 680,
+      "overnight": true,
+      "stopoverDuration": "08h",
+      "durationDays": 1,
+      "longStopover": true,
+      "segments": [
+        {
+          "durationMinutes": 120,
+          "stopoverDurationMinutes": 480,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "LTN",
+          "airlineCode": "W9",
+          "cabin": "economy",
+          "designatorCode": "W92603",
+          "departureDateTime": "2023-12-25T22:10:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T23:10:00.000Z"
+        },
+        {
+          "durationMinutes": 80,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "LTN",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U22435",
+          "departureDateTime": "2023-12-26T07:10:00.000Z",
+          "arrivalDateTime": "2023-12-26T09:30:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 830.67
+    },
+    {
+      "id": "PRG-CDG:KL1354~25:KL2013~25:0",
+      "departureTime": "11:30",
+      "arrivalTime": "16:10",
+      "duration": "04h 40m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["KL"],
+      "stopoverAirportCodes": ["AMS"],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 690,
+      "arrivalTimeMinutes": 970,
+      "departureDateTime": "2023-12-25T11:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T16:10:00.000+01:00",
+      "stopoverDurationMinutes": 100,
+      "durationMinutes": 280,
+      "overnight": false,
+      "stopoverDuration": "01h 40m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 100,
+          "stopoverDurationMinutes": 100,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "AMS",
+          "airlineCode": "KL",
+          "cabin": "economy",
+          "designatorCode": "KL1354",
+          "departureDateTime": "2023-12-25T11:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T13:10:00.000+01:00"
+        },
+        {
+          "durationMinutes": 80,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "AMS",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "KL",
+          "operatingAirlineCode": "AF",
+          "cabin": "economy",
+          "designatorCode": "KL2013",
+          "departureDateTime": "2023-12-25T14:50:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:10:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["AF"],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 894
+    },
+    {
+      "id": "PRG-ORY:W95776~25:VY6945~25:0",
+      "departureTime": "09:30",
+      "arrivalTime": "16:25",
+      "duration": "06h 55m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["W9", "VY"],
+      "stopoverAirportCodes": ["LGW"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 570,
+      "arrivalTimeMinutes": 985,
+      "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T16:25:00.000+01:00",
+      "stopoverDurationMinutes": 220,
+      "durationMinutes": 415,
+      "overnight": false,
+      "stopoverDuration": "03h 40m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 220,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "LGW",
+          "airlineCode": "W9",
+          "cabin": "economy",
+          "designatorCode": "W95776",
+          "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:25:00.000Z"
+        },
+        {
+          "durationMinutes": 80,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "LGW",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "VY",
+          "cabin": "economy",
+          "designatorCode": "VY6945",
+          "departureDateTime": "2023-12-25T14:05:00.000Z",
+          "arrivalDateTime": "2023-12-25T16:25:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 888.33
+    },
+    {
+      "id": "PRG-CDG:KL1352~25:KL1233~25:0",
+      "departureTime": "08:50",
+      "arrivalTime": "13:40",
+      "duration": "04h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["KL"],
+      "stopoverAirportCodes": ["AMS"],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 530,
+      "arrivalTimeMinutes": 820,
+      "departureDateTime": "2023-12-25T08:50:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T13:40:00.000+01:00",
+      "stopoverDurationMinutes": 115,
+      "durationMinutes": 290,
+      "overnight": false,
+      "stopoverDuration": "01h 55m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 100,
+          "stopoverDurationMinutes": 115,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "AMS",
+          "airlineCode": "KL",
+          "operatingAirlineCode": "WA",
+          "cabin": "economy",
+          "designatorCode": "KL1352",
+          "departureDateTime": "2023-12-25T08:50:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:30:00.000+01:00"
+        },
+        {
+          "durationMinutes": 75,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "AMS",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "KL",
+          "cabin": "economy",
+          "designatorCode": "KL1233",
+          "departureDateTime": "2023-12-25T12:25:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T13:40:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["WA"],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 895.83
+    },
+    {
+      "id": "PRG-CDG:KL1356~25:KL1245~25:0",
+      "departureTime": "14:25",
+      "arrivalTime": "19:10",
+      "duration": "04h 45m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["KL"],
+      "stopoverAirportCodes": ["AMS"],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 865,
+      "arrivalTimeMinutes": 1150,
+      "departureDateTime": "2023-12-25T14:25:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T19:10:00.000+01:00",
+      "stopoverDurationMinutes": 115,
+      "durationMinutes": 285,
+      "overnight": false,
+      "stopoverDuration": "01h 55m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 95,
+          "stopoverDurationMinutes": 115,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "AMS",
+          "airlineCode": "KL",
+          "operatingAirlineCode": "WA",
+          "cabin": "economy",
+          "designatorCode": "KL1356",
+          "departureDateTime": "2023-12-25T14:25:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:00:00.000+01:00"
+        },
+        {
+          "durationMinutes": 75,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "AMS",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "KL",
+          "cabin": "economy",
+          "designatorCode": "KL1245",
+          "departureDateTime": "2023-12-25T17:55:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T19:10:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["WA"],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 896.17
+    },
+    {
+      "id": "PRG-ORY:U23902~25:VY8431~25:0",
+      "departureTime": "15:15",
+      "arrivalTime": "22:10",
+      "duration": "06h 55m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["VY", "U2"],
+      "stopoverAirportCodes": ["MXP"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 915,
+      "arrivalTimeMinutes": 1330,
+      "departureDateTime": "2023-12-25T15:15:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T22:10:00.000+01:00",
+      "stopoverDurationMinutes": 235,
+      "durationMinutes": 415,
+      "overnight": false,
+      "stopoverDuration": "03h 55m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 85,
+          "stopoverDurationMinutes": 235,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "MXP",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U23902",
+          "departureDateTime": "2023-12-25T15:15:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:40:00.000+01:00"
+        },
+        {
+          "durationMinutes": 95,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "MXP",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "VY",
+          "cabin": "economy",
+          "designatorCode": "VY8431",
+          "departureDateTime": "2023-12-25T20:35:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T22:10:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 878.33
+    },
+    {
+      "id": "PRG-CDG:W95776~25:U28407~25:0",
+      "departureTime": "09:30",
+      "arrivalTime": "17:45",
+      "duration": "08h 15m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["W9", "U2"],
+      "stopoverAirportCodes": ["LGW"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 570,
+      "arrivalTimeMinutes": 1065,
+      "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T17:45:00.000+01:00",
+      "stopoverDurationMinutes": 305,
+      "durationMinutes": 495,
+      "overnight": false,
+      "stopoverDuration": "05h 05m",
+      "durationDays": 0,
+      "longStopover": true,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 305,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "LGW",
+          "airlineCode": "W9",
+          "cabin": "economy",
+          "designatorCode": "W95776",
+          "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:25:00.000Z"
+        },
+        {
+          "durationMinutes": 75,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "LGW",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U28407",
+          "departureDateTime": "2023-12-25T15:30:00.000Z",
+          "arrivalDateTime": "2023-12-25T17:45:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 872.17
+    },
+    {
+      "id": "PRG-CDG:QS8760~25:0",
+      "departureTime": "12:25",
+      "arrivalTime": "14:15",
+      "duration": "01h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["QS"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 745,
+      "arrivalTimeMinutes": 855,
+      "departureDateTime": "2023-12-25T12:25:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T14:15:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 110,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 110,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "QS",
+          "operatingAirlineCode": "OK",
+          "cabin": "economy",
+          "designatorCode": "QS8760",
+          "departureDateTime": "2023-12-25T12:25:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T14:15:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["OK"],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-CDG:KL1354~25:KL2009~25:0",
+      "departureTime": "11:30",
+      "arrivalTime": "15:15",
+      "duration": "03h 45m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["KL"],
+      "stopoverAirportCodes": ["AMS"],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 690,
+      "arrivalTimeMinutes": 915,
+      "departureDateTime": "2023-12-25T11:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T15:15:00.000+01:00",
+      "stopoverDurationMinutes": 45,
+      "durationMinutes": 225,
+      "overnight": false,
+      "stopoverDuration": "45m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 100,
+          "stopoverDurationMinutes": 45,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "AMS",
+          "airlineCode": "KL",
+          "cabin": "economy",
+          "designatorCode": "KL1354",
+          "departureDateTime": "2023-12-25T11:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T13:10:00.000+01:00"
+        },
+        {
+          "durationMinutes": 80,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "AMS",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "KL",
+          "operatingAirlineCode": "AF",
+          "cabin": "economy",
+          "designatorCode": "KL2009",
+          "departureDateTime": "2023-12-25T13:55:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T15:15:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["AF"],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 880
+    },
+    {
+      "id": "PRG-ORY:TO4395~25:0",
+      "departureTime": "14:20",
+      "arrivalTime": "16:15",
+      "duration": "01h 55m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["TO"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 860,
+      "arrivalTimeMinutes": 975,
+      "departureDateTime": "2023-12-25T14:20:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T16:15:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 115,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "TO",
+          "cabin": "economy",
+          "designatorCode": "TO4395",
+          "departureDateTime": "2023-12-25T14:20:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:15:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-ORY:W45440~25:U24009~25:0",
+      "departureTime": "08:25",
+      "arrivalTime": "15:35",
+      "duration": "07h 10m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["U2", "W4"],
+      "stopoverAirportCodes": ["VCE"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 505,
+      "arrivalTimeMinutes": 935,
+      "departureDateTime": "2023-12-25T08:25:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T15:35:00.000+01:00",
+      "stopoverDurationMinutes": 235,
+      "durationMinutes": 430,
+      "overnight": false,
+      "stopoverDuration": "03h 55m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 85,
+          "stopoverDurationMinutes": 235,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "VCE",
+          "airlineCode": "W4",
+          "cabin": "economy",
+          "designatorCode": "W45440",
+          "departureDateTime": "2023-12-25T08:25:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T09:50:00.000+01:00"
+        },
+        {
+          "durationMinutes": 110,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "VCE",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U24009",
+          "departureDateTime": "2023-12-25T13:45:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T15:35:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 887.33
+    },
+    {
+      "id": "PRG-CDG:W45620~25:U24544~25:0",
+      "departureTime": "08:40",
+      "arrivalTime": "14:45",
+      "duration": "06h 05m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["U2", "W4"],
+      "stopoverAirportCodes": ["MXP"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 520,
+      "arrivalTimeMinutes": 885,
+      "departureDateTime": "2023-12-25T08:40:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T14:45:00.000+01:00",
+      "stopoverDurationMinutes": 185,
+      "durationMinutes": 365,
+      "overnight": false,
+      "stopoverDuration": "03h 05m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 85,
+          "stopoverDurationMinutes": 185,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "MXP",
+          "airlineCode": "W4",
+          "cabin": "economy",
+          "designatorCode": "W45620",
+          "departureDateTime": "2023-12-25T08:40:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:05:00.000+01:00"
+        },
+        {
+          "durationMinutes": 95,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "MXP",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U24544",
+          "departureDateTime": "2023-12-25T13:10:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T14:45:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 891.67
+    },
+    {
+      "id": "PRG-ORY:W95776~25:VY6947~25:0",
+      "departureTime": "09:30",
+      "arrivalTime": "21:50",
+      "duration": "12h 20m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["W9", "VY"],
+      "stopoverAirportCodes": ["LGW"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 570,
+      "arrivalTimeMinutes": 1310,
+      "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T21:50:00.000+01:00",
+      "stopoverDurationMinutes": 545,
+      "durationMinutes": 740,
+      "overnight": false,
+      "stopoverDuration": "09h 05m",
+      "durationDays": 0,
+      "longStopover": true,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 545,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "LGW",
+          "airlineCode": "W9",
+          "cabin": "economy",
+          "designatorCode": "W95776",
+          "departureDateTime": "2023-12-25T09:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:25:00.000Z"
+        },
+        {
+          "durationMinutes": 80,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "LGW",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "VY",
+          "cabin": "economy",
+          "designatorCode": "VY6947",
+          "departureDateTime": "2023-12-25T19:30:00.000Z",
+          "arrivalDateTime": "2023-12-25T21:50:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 815.83
+    },
+    {
+      "id": "PRG-CDG:QS8766~25:0",
+      "departureTime": "17:35",
+      "arrivalTime": "19:25",
+      "duration": "01h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["QS"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 1055,
+      "arrivalTimeMinutes": 1165,
+      "departureDateTime": "2023-12-25T17:35:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T19:25:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 110,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 110,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "QS",
+          "operatingAirlineCode": "OK",
+          "cabin": "economy",
+          "designatorCode": "QS8766",
+          "departureDateTime": "2023-12-25T17:35:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T19:25:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["OK"],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-ORY:U21564~25:U21342~25:0",
+      "departureTime": "16:00",
+      "arrivalTime": "20:15",
+      "duration": "04h 15m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["U2"],
+      "stopoverAirportCodes": ["GVA"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 960,
+      "arrivalTimeMinutes": 1215,
+      "departureDateTime": "2023-12-25T16:00:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T20:15:00.000+01:00",
+      "stopoverDurationMinutes": 90,
+      "durationMinutes": 255,
+      "overnight": false,
+      "stopoverDuration": "01h 30m",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 95,
+          "stopoverDurationMinutes": 90,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "GVA",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U21564",
+          "departureDateTime": "2023-12-25T16:00:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T17:35:00.000+01:00"
+        },
+        {
+          "durationMinutes": 70,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "GVA",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U21342",
+          "departureDateTime": "2023-12-25T19:05:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T20:15:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 894
+    },
+    {
+      "id": "PRG-CDG:AF1083~25:0",
+      "departureTime": "18:20",
+      "arrivalTime": "20:10",
+      "duration": "01h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["AF"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 1100,
+      "arrivalTimeMinutes": 1210,
+      "departureDateTime": "2023-12-25T18:20:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T20:10:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 110,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 110,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "AF",
+          "operatingAirlineCode": "A5",
+          "cabin": "economy",
+          "designatorCode": "AF1083",
+          "departureDateTime": "2023-12-25T18:20:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T20:10:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["A5"],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-CDG:AF1383~25:0",
+      "departureTime": "12:30",
+      "arrivalTime": "14:20",
+      "duration": "01h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["AF"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 750,
+      "arrivalTimeMinutes": 860,
+      "departureDateTime": "2023-12-25T12:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T14:20:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 110,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 110,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "AF",
+          "operatingAirlineCode": "A5",
+          "cabin": "economy",
+          "designatorCode": "AF1383",
+          "departureDateTime": "2023-12-25T12:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T14:20:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": ["A5"],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-CDG:AF1583~25:0",
+      "departureTime": "06:30",
+      "arrivalTime": "08:25",
+      "duration": "01h 55m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["AF"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["sky_team"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 390,
+      "arrivalTimeMinutes": 505,
+      "departureDateTime": "2023-12-25T06:30:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T08:25:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 115,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "AF",
+          "cabin": "economy",
+          "designatorCode": "AF1583",
+          "departureDateTime": "2023-12-25T06:30:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T08:25:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 1000
+    },
+    {
+      "id": "PRG-CDG:W45440~25:U24552~25:0",
+      "departureTime": "08:25",
+      "arrivalTime": "16:45",
+      "duration": "08h 20m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["U2", "W4"],
+      "stopoverAirportCodes": ["VCE"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 505,
+      "arrivalTimeMinutes": 1005,
+      "departureDateTime": "2023-12-25T08:25:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T16:45:00.000+01:00",
+      "stopoverDurationMinutes": 300,
+      "durationMinutes": 500,
+      "overnight": false,
+      "stopoverDuration": "05h",
+      "durationDays": 0,
+      "longStopover": true,
+      "segments": [
+        {
+          "durationMinutes": 85,
+          "stopoverDurationMinutes": 300,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "VCE",
+          "airlineCode": "W4",
+          "cabin": "economy",
+          "designatorCode": "W45440",
+          "departureDateTime": "2023-12-25T08:25:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T09:50:00.000+01:00"
+        },
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "VCE",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U24552",
+          "departureDateTime": "2023-12-25T14:50:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:45:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 872.67
+    },
+    {
+      "id": "PRG-ORY:TO4399~25:0",
+      "departureTime": "20:50",
+      "arrivalTime": "22:45",
+      "duration": "01h 55m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "ORY",
+      "airlineCodes": ["TO"],
+      "stopoverAirportCodes": [],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 0,
+      "departureTimeMinutes": 1250,
+      "arrivalTimeMinutes": 1365,
+      "departureDateTime": "2023-12-25T20:50:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T22:45:00.000+01:00",
+      "stopoverDurationMinutes": 0,
+      "durationMinutes": 115,
+      "overnight": false,
+      "stopoverDuration": "00h",
+      "durationDays": 0,
+      "longStopover": false,
+      "segments": [
+        {
+          "durationMinutes": 115,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "ORY",
+          "airlineCode": "TO",
+          "cabin": "economy",
+          "designatorCode": "TO4399",
+          "departureDateTime": "2023-12-25T20:50:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T22:45:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "DIRECT",
+      "shortStopover": true,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 990
+    },
+    {
+      "id": "PRG-CDG:W45620~25:U23813~25:0",
+      "departureTime": "08:40",
+      "arrivalTime": "16:30",
+      "duration": "07h 50m",
+      "departureAirportCode": "PRG",
+      "arrivalAirportCode": "CDG",
+      "airlineCodes": ["U2", "W4"],
+      "stopoverAirportCodes": ["MXP"],
+      "allianceCodes": ["lcc"],
+      "stopoversCount": 1,
+      "departureTimeMinutes": 520,
+      "arrivalTimeMinutes": 990,
+      "departureDateTime": "2023-12-25T08:40:00.000+01:00",
+      "arrivalDateTime": "2023-12-25T16:30:00.000+01:00",
+      "stopoverDurationMinutes": 290,
+      "durationMinutes": 470,
+      "overnight": false,
+      "stopoverDuration": "04h 50m",
+      "durationDays": 0,
+      "longStopover": true,
+      "segments": [
+        {
+          "durationMinutes": 85,
+          "stopoverDurationMinutes": 290,
+          "departureAirportCode": "PRG",
+          "arrivalAirportCode": "MXP",
+          "airlineCode": "W4",
+          "cabin": "economy",
+          "designatorCode": "W45620",
+          "departureDateTime": "2023-12-25T08:40:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T10:05:00.000+01:00"
+        },
+        {
+          "durationMinutes": 95,
+          "stopoverDurationMinutes": 0,
+          "departureAirportCode": "MXP",
+          "arrivalAirportCode": "CDG",
+          "airlineCode": "U2",
+          "cabin": "economy",
+          "designatorCode": "U23813",
+          "departureDateTime": "2023-12-25T14:55:00.000+01:00",
+          "arrivalDateTime": "2023-12-25T16:30:00.000+01:00"
+        }
+      ],
+      "operatingAirlineCodes": [],
+      "stopoverCode": "ONE_STOP",
+      "shortStopover": false,
+      "earlyDeparture": false,
+      "lateArrival": false,
+      "newAircraft": false,
+      "oldAircraft": true,
+      "highlyRatedCarrier": false,
+      "score": 876.33
+    }
+  ],
+  "tags": [
+    {
+      "id": 5,
+      "code": "REFUNDABLE",
+      "name": "Refundable",
+      "type": "flexible_tickets",
+      "price": {
+        "totalAmount": 107,
+        "totalAmountUsd": 107.1,
+        "currencyCode": "USD"
+      }
+    }
+  ],
+  "search": {
+    "id": "57d1ddf987faabcamsr",
+    "cabin": "economy",
+    "adultsCount": 1,
+    "childrenCount": 0,
+    "infantsCount": 0,
+    "siteCode": "US",
+    "currencyCode": "USD",
+    "locale": "en",
+    "deviceType": "desktop",
+    "appType": "WEB_APP",
+    "createdAt": "2023-11-12T11:33:57.528Z",
+    "key": "[PRG:cPAR:2023-12-25]~1~0~0~US~economy~desktop~WEB_APP",
+    "userCountryCode": "US",
+    "wgInternalCampaign": "",
+    "legs": [
+      {
+        "id": "PRG:cPAR:2023-12-25",
+        "outboundDate": "2023-12-25",
+        "departureAirportCode": "PRG",
+        "arrivalCityCode": "PAR",
+        "departureCity": {
+          "code": "PRG",
+          "name": "Prague",
+          "enName": "Prague",
+          "countryCode": "CZ",
+          "countryName": "Czech Republic",
+          "countryEnName": "Czech Republic",
+          "worldRegionCode": "e",
+          "worldRegionName": "Europe",
+          "worldRegionEnName": "Europe"
+        },
+        "arrivalCity": {
+          "code": "PAR",
+          "name": "Paris",
+          "enName": "Paris",
+          "countryCode": "FR",
+          "countryName": "France",
+          "countryEnName": "France",
+          "worldRegionCode": "e",
+          "worldRegionName": "Europe",
+          "worldRegionEnName": "Europe"
+        },
+        "departureAirport": {
+          "name": "Prague Airport",
+          "code": "PRG",
+          "cityCode": "PRG"
+        }
+      }
+    ],
+    "nearbyRoutes": []
+  },
+  "airlines": [
+    {
+      "name": "Air France",
+      "code": "AF"
+    },
+    {
+      "name": "Czech Airlines",
+      "code": "OK"
+    },
+    {
+      "name": "EasyJet",
+      "code": "U2"
+    },
+    {
+      "name": "HOP!",
+      "code": "A5"
+    },
+    {
+      "name": "KLM",
+      "code": "KL"
+    },
+    {
+      "name": "KLM Cityhopper",
+      "code": "WA"
+    },
+    {
+      "name": "Smartwings",
+      "code": "QS"
+    },
+    {
+      "name": "Transavia.com France",
+      "code": "TO"
+    },
+    {
+      "name": "Vueling Airlines",
+      "code": "VY"
+    },
+    {
+      "name": "Wizz Air Malta",
+      "code": "W4"
+    },
+    {
+      "name": "Wizz Air UK",
+      "code": "W9"
+    }
+  ],
+  "airports": [
+    {
+      "name": "Amsterdam Airport",
+      "code": "AMS",
+      "cityCode": "AMS"
+    },
+    {
+      "name": "Geneva Airport",
+      "code": "GVA",
+      "cityCode": "GVA"
+    },
+    {
+      "name": "London Gatwick Airport",
+      "code": "LGW",
+      "cityCode": "LON"
+    },
+    {
+      "name": "London Luton Airport",
+      "code": "LTN",
+      "cityCode": "LON"
+    },
+    {
+      "name": "Milan Malpensa Airport",
+      "code": "MXP",
+      "cityCode": "MIL"
+    },
+    {
+      "name": "Paris Charles de Gaulle Airport",
+      "code": "CDG",
+      "cityCode": "PAR"
+    },
+    {
+      "name": "Paris Orly Airport",
+      "code": "ORY",
+      "cityCode": "PAR"
+    },
+    {
+      "name": "Prague Airport",
+      "code": "PRG",
+      "cityCode": "PRG"
+    },
+    {
+      "name": "Venice Marco Polo Airport",
+      "code": "VCE",
+      "cityCode": "VCE"
+    }
+  ],
+  "cities": [
+    {
+      "code": "AMS",
+      "name": "Amsterdam",
+      "countryCode": "NL"
+    },
+    {
+      "code": "GVA",
+      "name": "Geneva",
+      "countryCode": "CH"
+    },
+    {
+      "code": "LON",
+      "name": "London",
+      "countryCode": "GB"
+    },
+    {
+      "code": "LON",
+      "name": "London",
+      "countryCode": "GB"
+    },
+    {
+      "code": "MIL",
+      "name": "Milan",
+      "countryCode": "IT"
+    },
+    {
+      "code": "PAR",
+      "name": "Paris",
+      "countryCode": "FR"
+    },
+    {
+      "code": "PAR",
+      "name": "Paris",
+      "countryCode": "FR"
+    },
+    {
+      "code": "PRG",
+      "name": "Prague",
+      "countryCode": "CZ"
+    },
+    {
+      "code": "VCE",
+      "name": "Venice",
+      "countryCode": "IT"
+    }
+  ],
+  "providers": [
+    {
+      "code": "airfrance.com",
+      "name": "Air France",
+      "type": "airline",
+      "instant": false,
+      "facilitatedBooking": false,
+      "wegoFare": false
+    },
+    {
+      "code": "dohop.com",
+      "name": "DohopConnect",
+      "type": "ota",
+      "instant": false,
+      "facilitatedBooking": false,
+      "wegoFare": false
+    },
+    {
+      "code": "smartwings.com",
+      "name": "Smartwings",
+      "type": "airline",
+      "instant": false,
+      "facilitatedBooking": false,
+      "wegoFare": false
+    },
+    {
+      "code": "transavia.com",
+      "name": "Transavia",
+      "type": "airline",
+      "instant": false,
+      "facilitatedBooking": false,
+      "wegoFare": false
+    },
+    {
+      "code": "worldwide.easyjet.com",
+      "name": "worldwide.easyjet",
+      "type": "ota",
+      "instant": false,
+      "facilitatedBooking": false,
+      "wegoFare": false
+    }
+  ],
+  "countries": [
+    {
+      "code": "CZ",
+      "name": "Czech Republic"
+    },
+    {
+      "code": "FR",
+      "name": "France"
+    },
+    {
+      "code": "FR",
+      "name": "France"
+    },
+    {
+      "code": "IT",
+      "name": "Italy"
+    },
+    {
+      "code": "IT",
+      "name": "Italy"
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom"
+    }
+  ],
+  "trips": [
+    {
+      "id": "57d1ddf987faabcamsr:W45620~25-U24544~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W45620~25-U24544~25",
+      "code": "W45620~25-U24544~25",
+      "legIds": ["PRG-CDG:W45620~25:U24544~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:TO4395~25",
+      "originalFlightId": "57d1ddf987faabcamsr:TO4395~25",
+      "code": "TO4395~25",
+      "legIds": ["PRG-ORY:TO4395~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:QS8760~25",
+      "originalFlightId": "57d1ddf987faabcamsr:QS8760~25",
+      "code": "QS8760~25",
+      "legIds": ["PRG-CDG:QS8760~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W45440~25-U24552~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W45440~25-U24552~25",
+      "code": "W45440~25-U24552~25",
+      "legIds": ["PRG-CDG:W45440~25:U24552~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:KL1352~25-KL1233~25",
+      "originalFlightId": "57d1ddf987faabcamsr:KL1352~25-KL1233~25",
+      "code": "KL1352~25-KL1233~25",
+      "legIds": ["PRG-CDG:KL1352~25:KL1233~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W95776~25-VY6947~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W95776~25-VY6947~25",
+      "code": "W95776~25-VY6947~25",
+      "legIds": ["PRG-ORY:W95776~25:VY6947~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W95776~25-VY6945~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W95776~25-VY6945~25",
+      "code": "W95776~25-VY6945~25",
+      "legIds": ["PRG-ORY:W95776~25:VY6945~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:QS8766~25",
+      "originalFlightId": "57d1ddf987faabcamsr:QS8766~25",
+      "code": "QS8766~25",
+      "legIds": ["PRG-CDG:QS8766~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W95776~25-U28407~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W95776~25-U28407~25",
+      "code": "W95776~25-U28407~25",
+      "legIds": ["PRG-CDG:W95776~25:U28407~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:U23902~25-VY8431~25",
+      "originalFlightId": "57d1ddf987faabcamsr:U23902~25-VY8431~25",
+      "code": "U23902~25-VY8431~25",
+      "legIds": ["PRG-ORY:U23902~25:VY8431~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:KL1356~25-KL1245~25",
+      "originalFlightId": "57d1ddf987faabcamsr:KL1356~25-KL1245~25",
+      "code": "KL1356~25-KL1245~25",
+      "legIds": ["PRG-CDG:KL1356~25:KL1245~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W45620~25-U23813~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W45620~25-U23813~25",
+      "code": "W45620~25-U23813~25",
+      "legIds": ["PRG-CDG:W45620~25:U23813~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:U21564~25-U21342~25",
+      "originalFlightId": "57d1ddf987faabcamsr:U21564~25-U21342~25",
+      "code": "U21564~25-U21342~25",
+      "legIds": ["PRG-ORY:U21564~25:U21342~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W45440~25-U24009~25",
+      "originalFlightId": "57d1ddf987faabcamsr:W45440~25-U24009~25",
+      "code": "W45440~25-U24009~25",
+      "legIds": ["PRG-ORY:W45440~25:U24009~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:KL1354~25-KL2013~25",
+      "originalFlightId": "57d1ddf987faabcamsr:KL1354~25-KL2013~25",
+      "code": "KL1354~25-KL2013~25",
+      "legIds": ["PRG-CDG:KL1354~25:KL2013~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:KL1354~25-KL2009~25",
+      "originalFlightId": "57d1ddf987faabcamsr:KL1354~25-KL2009~25",
+      "code": "KL1354~25-KL2009~25",
+      "legIds": ["PRG-CDG:KL1354~25:KL2009~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:AF1383~25",
+      "originalFlightId": "57d1ddf987faabcamsr:AF1383~25",
+      "code": "AF1383~25",
+      "legIds": ["PRG-CDG:AF1383~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:AF1083~25",
+      "originalFlightId": "57d1ddf987faabcamsr:AF1083~25",
+      "code": "AF1083~25",
+      "legIds": ["PRG-CDG:AF1083~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:W92603~25-U22435~26",
+      "originalFlightId": "57d1ddf987faabcamsr:W92603~25-U22435~26",
+      "code": "W92603~25-U22435~26",
+      "legIds": ["PRG-CDG:W92603~25:U22435~26:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:TO4399~25",
+      "originalFlightId": "57d1ddf987faabcamsr:TO4399~25",
+      "code": "TO4399~25",
+      "legIds": ["PRG-ORY:TO4399~25:0"],
+      "normalizedFlight": false
+    },
+    {
+      "id": "57d1ddf987faabcamsr:AF1583~25",
+      "originalFlightId": "57d1ddf987faabcamsr:AF1583~25",
+      "code": "AF1583~25",
+      "legIds": ["PRG-CDG:AF1583~25:0"],
+      "normalizedFlight": false
+    }
+  ],
+  "fares": [
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 13,
+          "currencyCode": "USD",
+          "amount": 0.53,
+          "amountUsd": 0.53253955,
+          "totalAmount": 0.53,
+          "totalAmountUsd": 0.53253955
+        },
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 1.07,
+          "amountUsd": 1.0650791,
+          "totalAmount": 1.07,
+          "totalAmountUsd": 1.0650791
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:transavia.com:87c205de538db",
+      "price": {
+        "totalAmount": 76,
+        "totalAmountUsd": 76.07708,
+        "amount": 76,
+        "amountUsd": 76.07708,
+        "originalAmount": 76.07708,
+        "originalAmountUsd": 76.07708,
+        "amountPerAdult": 76.07708,
+        "amountPerChild": 0,
+        "amountPerInfant": 32.145245,
+        "taxAmount": 29.466475,
+        "taxAmountUsd": 29.466475,
+        "totalTaxAmount": 29.466475,
+        "totalTaxAmountUsd": 29.466475,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "transavia.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:transavia.com:87c205de538db&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=transavia.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.571843,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 923.9229,
+      "tripId": "57d1ddf987faabcamsr:TO4395~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:cef6854092b490a8",
+      "price": {
+        "totalAmount": 82,
+        "totalAmountUsd": 82.27,
+        "amount": 82,
+        "amountUsd": 82.27,
+        "originalAmount": 82.27,
+        "originalAmountUsd": 82.27,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:cef6854092b490a8&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 809.39996,
+      "tripId": "57d1ddf987faabcamsr:W45620~25-U24544~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:bcd5187aedf4f54",
+      "price": {
+        "totalAmount": 88,
+        "totalAmountUsd": 88.15,
+        "amount": 88,
+        "amountUsd": 88.15,
+        "originalAmount": 88.15,
+        "originalAmountUsd": 88.15,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:bcd5187aedf4f54&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 788.18,
+      "tripId": "57d1ddf987faabcamsr:W45620~25-U23813~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 13,
+          "currencyCode": "USD",
+          "amount": 0.69,
+          "amountUsd": 0.69005126,
+          "totalAmount": 0.69,
+          "totalAmountUsd": 0.69005126
+        },
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 1.38,
+          "amountUsd": 1.3801025,
+          "totalAmount": 1.38,
+          "totalAmountUsd": 1.3801025
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:transavia.com:a580c4f7047c5e3a",
+      "price": {
+        "totalAmount": 99,
+        "totalAmountUsd": 98.57875,
+        "amount": 99,
+        "amountUsd": 98.57875,
+        "originalAmount": 98.57875,
+        "originalAmountUsd": 98.57875,
+        "amountPerAdult": 98.57875,
+        "amountPerChild": 0,
+        "amountPerInfant": 32.145245,
+        "taxAmount": 29.466475,
+        "taxAmountUsd": 29.466475,
+        "totalTaxAmount": 29.466475,
+        "totalTaxAmountUsd": 29.466475,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "transavia.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:transavia.com:a580c4f7047c5e3a&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=transavia.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.571843,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 891.42126,
+      "tripId": "57d1ddf987faabcamsr:TO4399~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:5177b6d5e27d8a05",
+      "price": {
+        "totalAmount": 100,
+        "totalAmountUsd": 99.7,
+        "amount": 100,
+        "amountUsd": 99.7,
+        "originalAmount": 99.7,
+        "originalAmountUsd": 99.7,
+        "amountPerAdult": 99.7,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:5177b6d5e27d8a05&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 900.3,
+      "tripId": "57d1ddf987faabcamsr:AF1583~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:smartwings.com:9a97cecfc7b9940e",
+      "price": {
+        "totalAmount": 107,
+        "totalAmountUsd": 107.1,
+        "amount": 107,
+        "amountUsd": 107.1,
+        "originalAmount": 107.1,
+        "originalAmountUsd": 107.1,
+        "amountPerAdult": 107.1,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 69.3,
+        "taxAmountUsd": 69.3,
+        "totalTaxAmount": 69.3,
+        "totalTaxAmountUsd": 69.3,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "smartwings.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:smartwings.com:9a97cecfc7b9940e&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=smartwings.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.555553,
+      "remainingSeatsCount": 0,
+      "conditionIds": [1],
+      "legConditionIds": [],
+      "refundable": true,
+      "exchangeable": false,
+      "tags": [
+        {
+          "id": 5,
+          "code": "REFUNDABLE"
+        }
+      ],
+      "score": 892.9,
+      "tripId": "57d1ddf987faabcamsr:QS8766~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:fc4d1c22cc07c132",
+      "price": {
+        "totalAmount": 108,
+        "totalAmountUsd": 107.7,
+        "amount": 108,
+        "amountUsd": 107.7,
+        "originalAmount": 107.7,
+        "originalAmountUsd": 107.7,
+        "amountPerAdult": 107.7,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:fc4d1c22cc07c132&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 892.3,
+      "tripId": "57d1ddf987faabcamsr:AF1083~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:18283d6946ee6d8a",
+      "price": {
+        "totalAmount": 113,
+        "totalAmountUsd": 112.7,
+        "amount": 113,
+        "amountUsd": 112.7,
+        "originalAmount": 112.7,
+        "originalAmountUsd": 112.7,
+        "amountPerAdult": 112.7,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:18283d6946ee6d8a&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 887.3,
+      "tripId": "57d1ddf987faabcamsr:AF1383~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:smartwings.com:cd471dca9a15767c",
+      "price": {
+        "totalAmount": 130,
+        "totalAmountUsd": 130,
+        "amount": 130,
+        "amountUsd": 130,
+        "originalAmount": 130,
+        "originalAmountUsd": 130,
+        "amountPerAdult": 130,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 82.2,
+        "taxAmountUsd": 82.2,
+        "totalTaxAmount": 82.2,
+        "totalTaxAmountUsd": 82.2,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "smartwings.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:smartwings.com:cd471dca9a15767c&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=smartwings.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.555553,
+      "remainingSeatsCount": 0,
+      "conditionIds": [1],
+      "legConditionIds": [],
+      "refundable": true,
+      "exchangeable": false,
+      "tags": [
+        {
+          "id": 5,
+          "code": "REFUNDABLE"
+        }
+      ],
+      "score": 870,
+      "tripId": "57d1ddf987faabcamsr:QS8760~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:dbbe1c8dac757a65",
+      "price": {
+        "totalAmount": 141,
+        "totalAmountUsd": 141.4,
+        "amount": 141,
+        "amountUsd": 141.4,
+        "originalAmount": 141.4,
+        "originalAmountUsd": 141.4,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:dbbe1c8dac757a65&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 745.93005,
+      "tripId": "57d1ddf987faabcamsr:W45440~25-U24009~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:875f2db6a625d191",
+      "price": {
+        "totalAmount": 162,
+        "totalAmountUsd": 161.995,
+        "amount": 162,
+        "amountUsd": 161.995,
+        "originalAmount": 161.995,
+        "originalAmountUsd": 161.995,
+        "amountPerAdult": 161.995,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:875f2db6a625d191&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 734.175,
+      "tripId": "57d1ddf987faabcamsr:KL1356~25-KL1245~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:3f37dd59728f49f2",
+      "price": {
+        "totalAmount": 167,
+        "totalAmountUsd": 166.55,
+        "amount": 167,
+        "amountUsd": 166.55,
+        "originalAmount": 166.55,
+        "originalAmountUsd": 166.55,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:3f37dd59728f49f2&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 711.78,
+      "tripId": "57d1ddf987faabcamsr:U23902~25-VY8431~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:263c70c8ee67a888",
+      "price": {
+        "totalAmount": 183,
+        "totalAmountUsd": 182.99,
+        "amount": 183,
+        "amountUsd": 182.99,
+        "originalAmount": 182.99,
+        "originalAmountUsd": 182.99,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:263c70c8ee67a888&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 705.34,
+      "tripId": "57d1ddf987faabcamsr:W95776~25-VY6945~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:163708fe1e55bbb",
+      "price": {
+        "totalAmount": 184,
+        "totalAmountUsd": 184.12283,
+        "amount": 184,
+        "amountUsd": 184.12283,
+        "originalAmount": 184.12283,
+        "originalAmountUsd": 184.12283,
+        "amountPerAdult": 184.12283,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:163708fe1e55bbb&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 711.70715,
+      "tripId": "57d1ddf987faabcamsr:KL1352~25-KL1233~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:1d916bf182ae0b2e",
+      "price": {
+        "totalAmount": 187,
+        "totalAmountUsd": 186.62,
+        "amount": 187,
+        "amountUsd": 186.62,
+        "originalAmount": 186.62,
+        "originalAmountUsd": 186.62,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:1d916bf182ae0b2e&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 686.05,
+      "tripId": "57d1ddf987faabcamsr:W45440~25-U24552~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:f3aebdaf4cf16999",
+      "price": {
+        "totalAmount": 206,
+        "totalAmountUsd": 206.48,
+        "amount": 206,
+        "amountUsd": 206.48,
+        "originalAmount": 206.48,
+        "originalAmountUsd": 206.48,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:f3aebdaf4cf16999&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 609.35004,
+      "tripId": "57d1ddf987faabcamsr:W95776~25-VY6947~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:ff6953d27975b6da",
+      "price": {
+        "totalAmount": 209,
+        "totalAmountUsd": 208.95,
+        "amount": 209,
+        "amountUsd": 208.95,
+        "originalAmount": 208.95,
+        "originalAmountUsd": 208.95,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:ff6953d27975b6da&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 621.72,
+      "tripId": "57d1ddf987faabcamsr:W92603~25-U22435~26"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:dohop.com:a1382ffcf2adf709",
+      "price": {
+        "totalAmount": 213,
+        "totalAmountUsd": 212.99,
+        "amount": 213,
+        "amountUsd": 212.99,
+        "originalAmount": 212.99,
+        "originalAmountUsd": 212.99,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "dohop.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:a1382ffcf2adf709&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 659.18,
+      "tripId": "57d1ddf987faabcamsr:W95776~25-U28407~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:3ee51c38897436eb",
+      "price": {
+        "totalAmount": 224,
+        "totalAmountUsd": 223.63062,
+        "amount": 224,
+        "amountUsd": 223.63062,
+        "originalAmount": 223.63062,
+        "originalAmountUsd": 223.63062,
+        "amountPerAdult": 223.63062,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:3ee51c38897436eb&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 670.3694,
+      "tripId": "57d1ddf987faabcamsr:KL1354~25-KL2013~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:worldwide.easyjet.com:3d0d7c022f90ab50",
+      "price": {
+        "totalAmount": 233,
+        "totalAmountUsd": 232.54,
+        "amount": 233,
+        "amountUsd": 232.54,
+        "originalAmount": 232.54,
+        "originalAmountUsd": 232.54,
+        "amountPerAdult": 0,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "worldwide.easyjet.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:worldwide.easyjet.com:3d0d7c022f90ab50&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=worldwide.easyjet.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 661.46,
+      "tripId": "57d1ddf987faabcamsr:U21564~25-U21342~25"
+    },
+    {
+      "paymentFees": [
+        {
+          "paymentMethodId": 3,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 10,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        },
+        {
+          "paymentMethodId": 15,
+          "currencyCode": "USD",
+          "amount": 0,
+          "amountUsd": 0,
+          "totalAmount": 0,
+          "totalAmountUsd": 0
+        }
+      ],
+      "id": "57d1ddf987faabcamsr:airfrance.com:c4127d54a09a036b",
+      "price": {
+        "totalAmount": 244,
+        "totalAmountUsd": 244.32103,
+        "amount": 244,
+        "amountUsd": 244.32103,
+        "originalAmount": 244.32103,
+        "originalAmountUsd": 244.32103,
+        "amountPerAdult": 244.32103,
+        "amountPerChild": 0,
+        "amountPerInfant": 0,
+        "taxAmount": 0,
+        "taxAmountUsd": 0,
+        "totalTaxAmount": 0,
+        "totalTaxAmountUsd": 0,
+        "currencyCode": "USD",
+        "paymentFeeAmountUsd": 0,
+        "bookingFee": 0,
+        "bookingFeeUsd": 0,
+        "totalBookingFee": 0,
+        "totalBookingFeeUsd": 0
+      },
+      "providerCode": "airfrance.com",
+      "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:airfrance.com:c4127d54a09a036b&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=airfrance.com&region=ap-southeast-1&placement_type=metasearch",
+      "ecpc": 0.137577,
+      "remainingSeatsCount": 0,
+      "conditionIds": [],
+      "legConditionIds": [],
+      "refundable": false,
+      "exchangeable": false,
+      "tags": [],
+      "score": 635.67896,
+      "tripId": "57d1ddf987faabcamsr:KL1354~25-KL2009~25"
+    }
+  ],
+  "filters": {
+    "minPrice": {
+      "totalAmount": 76,
+      "totalAmountUsd": 76.07708,
+      "amount": 76,
+      "amountUsd": 76.07708,
+      "originalAmount": 76.07708,
+      "originalAmountUsd": 76.07708,
+      "amountPerAdult": 76.07708,
+      "amountPerChild": 0,
+      "amountPerInfant": 32.145245,
+      "taxAmount": 29.466475,
+      "taxAmountUsd": 29.466475,
+      "totalTaxAmount": 29.466475,
+      "totalTaxAmountUsd": 29.466475,
+      "currencyCode": "USD",
+      "paymentFeeAmountUsd": 0,
+      "bookingFee": 0,
+      "bookingFeeUsd": 0,
+      "totalBookingFee": 0,
+      "totalBookingFeeUsd": 0
+    },
+    "maxPrice": {
+      "totalAmount": 244,
+      "totalAmountUsd": 244.32103,
+      "amount": 244,
+      "amountUsd": 244.32103,
+      "originalAmount": 244.32103,
+      "originalAmountUsd": 244.32103,
+      "amountPerAdult": 244.32103,
+      "amountPerChild": 0,
+      "amountPerInfant": 0,
+      "taxAmount": 0,
+      "taxAmountUsd": 0,
+      "totalTaxAmount": 0,
+      "totalTaxAmountUsd": 0,
+      "currencyCode": "USD",
+      "paymentFeeAmountUsd": 0,
+      "bookingFee": 0,
+      "bookingFeeUsd": 0,
+      "totalBookingFee": 0,
+      "totalBookingFeeUsd": 0
+    },
+    "stops": [
+      {
+        "code": "ONE_STOP",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "DIRECT",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "airlines": [
+      {
+        "code": "KL",
+        "price": {
+          "totalAmount": 162,
+          "totalAmountUsd": 161.995,
+          "amount": 162,
+          "amountUsd": 161.995,
+          "originalAmount": 161.995,
+          "originalAmountUsd": 161.995,
+          "amountPerAdult": 161.995,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "W9",
+        "price": {
+          "totalAmount": 183,
+          "totalAmountUsd": 182.99,
+          "amount": 183,
+          "amountUsd": 182.99,
+          "originalAmount": 182.99,
+          "originalAmountUsd": 182.99,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "QS",
+        "price": {
+          "totalAmount": 107,
+          "totalAmountUsd": 107.1,
+          "amount": 107,
+          "amountUsd": 107.1,
+          "originalAmount": 107.1,
+          "originalAmountUsd": 107.1,
+          "amountPerAdult": 107.1,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 69.3,
+          "taxAmountUsd": 69.3,
+          "totalTaxAmount": 69.3,
+          "totalTaxAmountUsd": 69.3,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "VY",
+        "price": {
+          "totalAmount": 167,
+          "totalAmountUsd": 166.55,
+          "amount": 167,
+          "amountUsd": 166.55,
+          "originalAmount": 166.55,
+          "originalAmountUsd": 166.55,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "AF",
+        "price": {
+          "totalAmount": 100,
+          "totalAmountUsd": 99.7,
+          "amount": 100,
+          "amountUsd": 99.7,
+          "originalAmount": 99.7,
+          "originalAmountUsd": 99.7,
+          "amountPerAdult": 99.7,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "TO",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "U2",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "providers": [
+      {
+        "code": "dohop.com",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "smartwings.com",
+        "price": {
+          "totalAmount": 107,
+          "totalAmountUsd": 107.1,
+          "amount": 107,
+          "amountUsd": 107.1,
+          "originalAmount": 107.1,
+          "originalAmountUsd": 107.1,
+          "amountPerAdult": 107.1,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 69.3,
+          "taxAmountUsd": 69.3,
+          "totalTaxAmount": 69.3,
+          "totalTaxAmountUsd": 69.3,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "transavia.com",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "airfrance.com",
+        "price": {
+          "totalAmount": 100,
+          "totalAmountUsd": 99.7,
+          "amount": 100,
+          "amountUsd": 99.7,
+          "originalAmount": 99.7,
+          "originalAmountUsd": 99.7,
+          "amountPerAdult": 99.7,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "worldwide.easyjet.com",
+        "price": {
+          "totalAmount": 233,
+          "totalAmountUsd": 232.54,
+          "amount": 233,
+          "amountUsd": 232.54,
+          "originalAmount": 232.54,
+          "originalAmountUsd": 232.54,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "stopoverAirports": [
+      {
+        "code": "GVA",
+        "price": {
+          "totalAmount": 233,
+          "totalAmountUsd": 232.54,
+          "amount": 233,
+          "amountUsd": 232.54,
+          "originalAmount": 232.54,
+          "originalAmountUsd": 232.54,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "MXP",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "LTN",
+        "price": {
+          "totalAmount": 209,
+          "totalAmountUsd": 208.95,
+          "amount": 209,
+          "amountUsd": 208.95,
+          "originalAmount": 208.95,
+          "originalAmountUsd": 208.95,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "AMS",
+        "price": {
+          "totalAmount": 162,
+          "totalAmountUsd": 161.995,
+          "amount": 162,
+          "amountUsd": 161.995,
+          "originalAmount": 161.995,
+          "originalAmountUsd": 161.995,
+          "amountPerAdult": 161.995,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "VCE",
+        "price": {
+          "totalAmount": 141,
+          "totalAmountUsd": 141.4,
+          "amount": 141,
+          "amountUsd": 141.4,
+          "originalAmount": 141.4,
+          "originalAmountUsd": 141.4,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "LGW",
+        "price": {
+          "totalAmount": 183,
+          "totalAmountUsd": 182.99,
+          "amount": 183,
+          "amountUsd": 182.99,
+          "originalAmount": 182.99,
+          "originalAmountUsd": 182.99,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "stopoverDurations": {
+      "min": 0,
+      "max": 545
+    },
+    "originAirports": [
+      {
+        "code": "PRG",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "destinationAirports": [
+      {
+        "code": "CDG",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "ORY",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "tripDurations": {
+      "min": 110,
+      "max": 740
+    },
+    "legs": [
+      {
+        "departureAirportCode": "PRG",
+        "arrivalAirportCode": "CDG",
+        "departureCityCode": "PRG",
+        "arrivalCityCode": "PAR",
+        "index": 0,
+        "departureTimes": {
+          "min": 390,
+          "max": 1330
+        },
+        "arrivalTimes": {
+          "min": 505,
+          "max": 1365
+        },
+        "durations": {
+          "min": 110,
+          "max": 740
+        },
+        "stops": [
+          {
+            "code": "ONE_STOP",
+            "price": {
+              "totalAmount": 82,
+              "totalAmountUsd": 82.27,
+              "amount": 82,
+              "amountUsd": 82.27,
+              "originalAmount": 82.27,
+              "originalAmountUsd": 82.27,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "DIRECT",
+            "price": {
+              "totalAmount": 76,
+              "totalAmountUsd": 76.07708,
+              "amount": 76,
+              "amountUsd": 76.07708,
+              "originalAmount": 76.07708,
+              "originalAmountUsd": 76.07708,
+              "amountPerAdult": 76.07708,
+              "amountPerChild": 0,
+              "amountPerInfant": 32.145245,
+              "taxAmount": 29.466475,
+              "taxAmountUsd": 29.466475,
+              "totalTaxAmount": 29.466475,
+              "totalTaxAmountUsd": 29.466475,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          }
+        ],
+        "stopoverDurations": {
+          "min": 0,
+          "max": 545
+        },
+        "stopoverAirports": [
+          {
+            "code": "GVA",
+            "price": {
+              "totalAmount": 233,
+              "totalAmountUsd": 232.54,
+              "amount": 233,
+              "amountUsd": 232.54,
+              "originalAmount": 232.54,
+              "originalAmountUsd": 232.54,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "MXP",
+            "price": {
+              "totalAmount": 82,
+              "totalAmountUsd": 82.27,
+              "amount": 82,
+              "amountUsd": 82.27,
+              "originalAmount": 82.27,
+              "originalAmountUsd": 82.27,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "LTN",
+            "price": {
+              "totalAmount": 209,
+              "totalAmountUsd": 208.95,
+              "amount": 209,
+              "amountUsd": 208.95,
+              "originalAmount": 208.95,
+              "originalAmountUsd": 208.95,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "AMS",
+            "price": {
+              "totalAmount": 162,
+              "totalAmountUsd": 161.995,
+              "amount": 162,
+              "amountUsd": 161.995,
+              "originalAmount": 161.995,
+              "originalAmountUsd": 161.995,
+              "amountPerAdult": 161.995,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "VCE",
+            "price": {
+              "totalAmount": 141,
+              "totalAmountUsd": 141.4,
+              "amount": 141,
+              "amountUsd": 141.4,
+              "originalAmount": 141.4,
+              "originalAmountUsd": 141.4,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "LGW",
+            "price": {
+              "totalAmount": 183,
+              "totalAmountUsd": 182.99,
+              "amount": 183,
+              "amountUsd": 182.99,
+              "originalAmount": 182.99,
+              "originalAmountUsd": 182.99,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          }
+        ],
+        "airlines": [
+          {
+            "code": "KL",
+            "price": {
+              "totalAmount": 162,
+              "totalAmountUsd": 161.995,
+              "amount": 162,
+              "amountUsd": 161.995,
+              "originalAmount": 161.995,
+              "originalAmountUsd": 161.995,
+              "amountPerAdult": 161.995,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "W9",
+            "price": {
+              "totalAmount": 183,
+              "totalAmountUsd": 182.99,
+              "amount": 183,
+              "amountUsd": 182.99,
+              "originalAmount": 182.99,
+              "originalAmountUsd": 182.99,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "QS",
+            "price": {
+              "totalAmount": 107,
+              "totalAmountUsd": 107.1,
+              "amount": 107,
+              "amountUsd": 107.1,
+              "originalAmount": 107.1,
+              "originalAmountUsd": 107.1,
+              "amountPerAdult": 107.1,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 69.3,
+              "taxAmountUsd": 69.3,
+              "totalTaxAmount": 69.3,
+              "totalTaxAmountUsd": 69.3,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "VY",
+            "price": {
+              "totalAmount": 167,
+              "totalAmountUsd": 166.55,
+              "amount": 167,
+              "amountUsd": 166.55,
+              "originalAmount": 166.55,
+              "originalAmountUsd": 166.55,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "AF",
+            "price": {
+              "totalAmount": 100,
+              "totalAmountUsd": 99.7,
+              "amount": 100,
+              "amountUsd": 99.7,
+              "originalAmount": 99.7,
+              "originalAmountUsd": 99.7,
+              "amountPerAdult": 99.7,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "TO",
+            "price": {
+              "totalAmount": 76,
+              "totalAmountUsd": 76.07708,
+              "amount": 76,
+              "amountUsd": 76.07708,
+              "originalAmount": 76.07708,
+              "originalAmountUsd": 76.07708,
+              "amountPerAdult": 76.07708,
+              "amountPerChild": 0,
+              "amountPerInfant": 32.145245,
+              "taxAmount": 29.466475,
+              "taxAmountUsd": 29.466475,
+              "totalTaxAmount": 29.466475,
+              "totalTaxAmountUsd": 29.466475,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          },
+          {
+            "code": "U2",
+            "price": {
+              "totalAmount": 82,
+              "totalAmountUsd": 82.27,
+              "amount": 82,
+              "amountUsd": 82.27,
+              "originalAmount": 82.27,
+              "originalAmountUsd": 82.27,
+              "amountPerAdult": 0,
+              "amountPerChild": 0,
+              "amountPerInfant": 0,
+              "taxAmount": 0,
+              "taxAmountUsd": 0,
+              "totalTaxAmount": 0,
+              "totalTaxAmountUsd": 0,
+              "currencyCode": "USD",
+              "paymentFeeAmountUsd": 0,
+              "bookingFee": 0,
+              "bookingFeeUsd": 0,
+              "totalBookingFee": 0,
+              "totalBookingFeeUsd": 0
+            }
+          }
+        ]
+      }
+    ],
+    "alliances": [
+      {
+        "code": "sky_team",
+        "price": {
+          "totalAmount": 100,
+          "totalAmountUsd": 99.7,
+          "amount": 100,
+          "amountUsd": 99.7,
+          "originalAmount": 99.7,
+          "originalAmountUsd": 99.7,
+          "amountPerAdult": 99.7,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      },
+      {
+        "code": "lcc",
+        "price": {
+          "totalAmount": 76,
+          "totalAmountUsd": 76.07708,
+          "amount": 76,
+          "amountUsd": 76.07708,
+          "originalAmount": 76.07708,
+          "originalAmountUsd": 76.07708,
+          "amountPerAdult": 76.07708,
+          "amountPerChild": 0,
+          "amountPerInfant": 32.145245,
+          "taxAmount": 29.466475,
+          "taxAmountUsd": 29.466475,
+          "totalTaxAmount": 29.466475,
+          "totalTaxAmountUsd": 29.466475,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ],
+    "fareConditions": [
+      {
+        "code": "1",
+        "price": {
+          "totalAmount": 107,
+          "totalAmountUsd": 107.1,
+          "amount": 107,
+          "amountUsd": 107.1,
+          "originalAmount": 107.1,
+          "originalAmountUsd": 107.1,
+          "amountPerAdult": 107.1,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 69.3,
+          "taxAmountUsd": 69.3,
+          "totalTaxAmount": 69.3,
+          "totalTaxAmountUsd": 69.3,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        }
+      }
+    ]
+  },
+  "routeSponsors": [
+    {
+      "priority": 0,
+      "fare": {
+        "paymentFees": [
+          {
+            "paymentMethodId": 10,
+            "currencyCode": "USD",
+            "amount": 0,
+            "amountUsd": 0,
+            "totalAmount": 0,
+            "totalAmountUsd": 0
+          },
+          {
+            "paymentMethodId": 15,
+            "currencyCode": "USD",
+            "amount": 0,
+            "amountUsd": 0,
+            "totalAmount": 0,
+            "totalAmountUsd": 0
+          }
+        ],
+        "id": "57d1ddf987faabcamsr:dohop.com:cef6854092b490a8",
+        "price": {
+          "totalAmount": 82,
+          "totalAmountUsd": 82.27,
+          "amount": 82,
+          "amountUsd": 82.27,
+          "originalAmount": 82.27,
+          "originalAmountUsd": 82.27,
+          "amountPerAdult": 0,
+          "amountPerChild": 0,
+          "amountPerInfant": 0,
+          "taxAmount": 0,
+          "taxAmountUsd": 0,
+          "totalTaxAmount": 0,
+          "totalTaxAmountUsd": 0,
+          "currencyCode": "USD",
+          "paymentFeeAmountUsd": 0,
+          "bookingFee": 0,
+          "bookingFeeUsd": 0,
+          "totalBookingFee": 0,
+          "totalBookingFeeUsd": 0
+        },
+        "providerCode": "dohop.com",
+        "handoffUrl": "https://handoff.wego.com/flights/continue?currency=USD&url_locale=en&site_code=US&device_type=desktop&app_type=WEB_APP&domain=www.wego.com&fare_id=57d1ddf987faabcamsr:dohop.com:cef6854092b490a8&route=PRG-PAR&search_id=57d1ddf987faabcamsr&trip_id=PRG:cPAR:2023-12-25&pwa=false&api_version=2&integration_code=dohop.com&placement_type=metasearch",
+        "ecpc": 0,
+        "remainingSeatsCount": 0,
+        "conditionIds": [],
+        "legConditionIds": [],
+        "refundable": false,
+        "exchangeable": false,
+        "tags": [],
+        "score": 809.39996,
+        "tripId": "57d1ddf987faabcamsr:W45620~25-U24544~25"
+      }
+    }
+  ],
+  "scores": {
+    "57d1ddf987faabcamsr:W45620~25-U24544~25": 891.67,
+    "57d1ddf987faabcamsr:TO4395~25": 1000,
+    "57d1ddf987faabcamsr:QS8760~25": 1000,
+    "57d1ddf987faabcamsr:W45440~25-U24552~25": 872.67,
+    "57d1ddf987faabcamsr:KL1352~25-KL1233~25": 895.83,
+    "57d1ddf987faabcamsr:W95776~25-VY6947~25": 815.83,
+    "57d1ddf987faabcamsr:W95776~25-VY6945~25": 888.33,
+    "57d1ddf987faabcamsr:QS8766~25": 1000,
+    "57d1ddf987faabcamsr:W95776~25-U28407~25": 872.17,
+    "57d1ddf987faabcamsr:U23902~25-VY8431~25": 878.33,
+    "57d1ddf987faabcamsr:KL1356~25-KL1245~25": 896.17,
+    "57d1ddf987faabcamsr:W45620~25-U23813~25": 876.33,
+    "57d1ddf987faabcamsr:U21564~25-U21342~25": 894,
+    "57d1ddf987faabcamsr:W45440~25-U24009~25": 887.33,
+    "57d1ddf987faabcamsr:KL1354~25-KL2013~25": 894,
+    "57d1ddf987faabcamsr:KL1354~25-KL2009~25": 880,
+    "57d1ddf987faabcamsr:AF1383~25": 1000,
+    "57d1ddf987faabcamsr:AF1083~25": 1000,
+    "57d1ddf987faabcamsr:W92603~25-U22435~26": 830.67,
+    "57d1ddf987faabcamsr:TO4399~25": 990,
+    "57d1ddf987faabcamsr:AF1583~25": 1000
+  },
+  "paymentMethods": [
+    {
+      "id": 10,
+      "name": "MasterCard Credit"
+    },
+    {
+      "id": 15,
+      "name": "Visa Credit"
+    },
+    {
+      "id": 3,
+      "name": "American Express"
+    },
+    {
+      "id": 13,
+      "name": "PayPal"
+    }
+  ],
+  "fareConditions": [
+    {
+      "id": 1,
+      "code": "REFUNDABLE",
+      "name": "Refundable"
+    }
+  ],
+  "faresCount": {
+    "57d1ddf987faabcamsr:W45620~25-U24544~25": 1,
+    "57d1ddf987faabcamsr:TO4395~25": 1,
+    "57d1ddf987faabcamsr:QS8760~25": 1,
+    "57d1ddf987faabcamsr:KL1352~25-KL1233~25": 1,
+    "57d1ddf987faabcamsr:W45440~25-U24552~25": 1,
+    "57d1ddf987faabcamsr:W95776~25-VY6947~25": 1,
+    "57d1ddf987faabcamsr:W95776~25-VY6945~25": 1,
+    "57d1ddf987faabcamsr:QS8766~25": 1,
+    "57d1ddf987faabcamsr:W95776~25-U28407~25": 1,
+    "57d1ddf987faabcamsr:KL1356~25-KL1245~25": 1,
+    "57d1ddf987faabcamsr:U23902~25-VY8431~25": 1,
+    "57d1ddf987faabcamsr:W45620~25-U23813~25": 1,
+    "57d1ddf987faabcamsr:U21564~25-U21342~25": 1,
+    "57d1ddf987faabcamsr:KL1354~25-KL2009~25": 1,
+    "57d1ddf987faabcamsr:KL1354~25-KL2013~25": 1,
+    "57d1ddf987faabcamsr:W45440~25-U24009~25": 1,
+    "57d1ddf987faabcamsr:AF1383~25": 1,
+    "57d1ddf987faabcamsr:AF1083~25": 1,
+    "57d1ddf987faabcamsr:W92603~25-U22435~26": 1,
+    "57d1ddf987faabcamsr:TO4399~25": 1,
+    "57d1ddf987faabcamsr:AF1583~25": 1
+  },
+  "promosCount": {},
+  "count": 21,
+  "sponsors": []
+}

@@ -12,6 +12,7 @@ import { LinkTypeModule } from "./links/link-types/linkType.module";
 import { LinkModule } from "./links/link.module";
 import { ProfileModule } from "./profile/profile.module";
 import { UsersModule } from "./users/users.module";
+import { FlightModule } from './flight/flight.module';
 
 @Module({
   controllers: [],
@@ -54,6 +55,7 @@ import { UsersModule } from "./users/users.module";
     LinkModule,
     LinkTypeModule,
     AirportModule,
+    FlightModule,
   ],
 })
 export class AppModule {}

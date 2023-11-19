@@ -1,9 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { api } from './api';
 import { airportApi } from './reducers/airport/AirportApi';
+import { flightApi } from './reducers/flight/FlightApi';
 
 // import cartReducer from './reducers/CartSlice';
-// import productReducer from './reducers/ProductSlice';
+import searchReducer from './reducers/SearchSlice';
 // import userReducer from './reducers/UserSlice';
 
 export const rootReducer = combineReducers({
@@ -13,10 +14,12 @@ export const rootReducer = combineReducers({
   // userReducer,
   // productReducer
   // checkOutReducer,
+  searchReducer,
   // [groupApi.reducerPath]: groupApi.reducer,
   // [shopApi.reducerPath]: shopApi.reducer,
   // [orderApi.reducerPath]: orderApi.reducer,
-  [airportApi.reducerPath]: airportApi.reducer
+  [airportApi.reducerPath]: airportApi.reducer,
+  [flightApi.reducerPath]: flightApi.reducer
 });
 
 export const setupStore = () => {
