@@ -32,12 +32,12 @@ export type OrderPassengersFormValues = {
 const getInitialOrderFormValuesArray = (length: number) =>
   length > 0
     ? (Array.from({ length }).fill({
-        gender: 'Чоловіча',
-        firstName: 'фіфіввіф',
-        lastName: 'іфввфів',
-        citizenship: 'Україна',
-        documentType: 'Закордоний',
-        documentSeriesNumber: '123123'
+        gender: '',
+        firstName: '',
+        lastName: '',
+        citizenship: '',
+        documentType: '',
+        documentSeriesNumber: ''
       }) as OrderFormValues[])
     : undefined;
 
