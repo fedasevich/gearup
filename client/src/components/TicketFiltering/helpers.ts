@@ -1,5 +1,4 @@
 import { AllianceElement, Filters, FlightLeg, MaxPriceClass, MergedFlight } from '@/libs/types/Flight/Flight.type';
-import { UserCurrency } from '@/libs/types/User/UserCurrency.type';
 import { CheckedAllianceElement, FiltersState, SliderDuration } from './types';
 
 export const getCheckboxListDefaultValues = (codeList: AllianceElement[]) =>
@@ -97,15 +96,4 @@ export const applyFilters = (filter: FiltersState | null, flights: MergedFlight[
   if (!filter) return flights;
 
   return flights.filter((flight) => filterFlightCriteria(flight, filter));
-};
-
-export const formatSliderHoursLabel = (value: number): string => {
-  const hours = Math.floor(value / 60);
-  const minutes = value % 60;
-
-  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
-};
-
-export const formatSliderPriceLabel = (value: number, currency: UserCurrency, rate: number): string => {
-  return `${(value * rate).toFixed(0)}${currency}`;
 };

@@ -1,5 +1,6 @@
-import { MAIN_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from './libs/constants/routes';
+import { MAIN_ROUTE, ORDER_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from './libs/constants/routes';
 import MainPage from './pages/MainPage';
+import { OrderPage } from './pages/OrderPage';
 import SearchPage from './pages/SearchPage';
 import { SupportPage } from './pages/SupportPage';
 
@@ -15,6 +16,10 @@ export const publicRoutes = [
   {
     path: SEARCH_ROUTE,
     Component: SearchPage
+  },
+  {
+    path: ORDER_ROUTE,
+    Component: OrderPage
   }
   // {
   //   path: SHOP_ROUTE_CATEGORY,

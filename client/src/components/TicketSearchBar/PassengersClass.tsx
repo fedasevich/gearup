@@ -55,7 +55,7 @@ export function PassengersClass() {
         <Button
           variant="outline"
           className={cn(
-            'flex h-auto w-full flex-row items-center justify-start bg-popover px-4 py-2 text-start',
+            'flex h-full w-full flex-row items-center justify-start bg-popover px-4 py-2 text-start',
             isError && 'shadow-[inset_0px_0px_8px_0px_#ff0000]'
           )}
         >

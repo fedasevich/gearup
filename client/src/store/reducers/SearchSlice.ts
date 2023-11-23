@@ -48,9 +48,12 @@ const searchSlice = createSlice({
         acc[item.code] = { ...item, name: stopsValues[item.code as Stops] };
         return acc;
       }, {} as FlightHelperElementMap);
+    },
+    resetSearchSlice: () => {
+      return initialState;
     }
   }
 });
 
-export const { setFilter, setSearchData, setAirlines, setAirports, setStops } = searchSlice.actions;
+export const { setFilter, setSearchData, setAirlines, setAirports, setStops, resetSearchSlice } = searchSlice.actions;
 export default searchSlice.reducer;

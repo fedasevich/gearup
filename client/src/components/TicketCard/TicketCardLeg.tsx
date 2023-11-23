@@ -14,7 +14,7 @@ export function TicketCardLeg({ leg }: TicketCardLegProps) {
 
   return (
     <TicketCardLegContext.Provider value={memoizedLeg}>
-      <div className="flex h-full flex-col items-center gap-8 lg:flex-row">
+      <div className="flex flex-col items-center gap-8  only:h-full lg:flex-row">
         <TicketCardLegAirlineImage />
         <TicketCardLegAirlineName />
         <TicketCardLegDuration />

@@ -18,6 +18,7 @@ interface TicketFilteringCheckboxListProps {
 export function TicketFilteringRangeSlider({ code, formatLabel }: TicketFilteringCheckboxListProps) {
   const dispatch = useAppDispatch();
   const state = useAppSelector((state) => state.searchReducer.filter);
+
   const [sliderValue, setSliderValue] = useState<StopoverDurations>({
     max: state?.[code]?.value?.max || 0,
     min: state?.[code]?.value?.min || 0

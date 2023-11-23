@@ -1,4 +1,4 @@
-import { SEARCH_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
+import { ORDER_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
 import { cn } from '@/libs/helpers/cn';
 import { useLocation } from 'react-router-dom';
 import { MobileNavbar } from '../Navbar/MobileNavbar';
@@ -8,7 +8,7 @@ import { TicketSearch } from '../TicketSearchBar/TicketSearch';
 export function Header() {
   const location = useLocation();
 
-  const isSupportPage = location.pathname === SUPPORT_ROUTE;
+  const isTitleShown = location.pathname === SUPPORT_ROUTE || location.pathname === ORDER_ROUTE;
   const isSearchPage = location.pathname === SEARCH_ROUTE;
 
   return (
@@ -16,7 +16,7 @@ export function Header() {
       <div className="2 px-4 md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
         <MobileNavbar />
         <Navbar />
-        {!isSupportPage ? (
+        {!isTitleShown ? (
           <div className={cn(!isSearchPage && 'my-24')}>
             {!isSearchPage && (
               <>

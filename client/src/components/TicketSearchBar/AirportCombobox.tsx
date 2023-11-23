@@ -81,7 +81,7 @@ export function AirportCombobox({ destination, field }: AirportComboboxProps) {
           role="combobox"
           aria-expanded={open}
           className={cn(
-            'relative flex h-auto w-full flex-row items-center justify-start px-4 py-2 text-start',
+            'relative flex h-full w-full flex-row items-center justify-start px-4 py-2 text-start',
             !!errors[field] && 'shadow-[inset_0px_0px_8px_0px_#ff0000]'
           )}
         >

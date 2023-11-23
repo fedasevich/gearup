@@ -1,6 +1,7 @@
 import { Controller, Get, Param } from "@nestjs/common";
 import { GetRoundTripFlightDto } from "./dto/get-roundtrip-flight.dto";
 import { FlightService } from "./flight.service";
+// import * as MOCKED_RESPONSE_ONEWAY from "./oneway.json";
 import * as MOCKED_RESPONSE_ONEWAY from "./oneway.json";
 
 @Controller("flight")

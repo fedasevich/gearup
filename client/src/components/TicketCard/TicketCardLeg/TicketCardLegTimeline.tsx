@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { formatSliderHoursLabel } from '@/components/TicketFiltering/helpers';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { formatHoursLabel } from '@/libs/helpers/formatHoursLabel';
 import { useAppSelector } from '@/libs/hooks/redux';
 import { Segment } from '@/libs/types/Flight/Flight.type';
 
@@ -39,7 +38,7 @@ function Timeline({ totalDuration, segments }: TicketCardLegTimelineProps) {
                   </div>
                 </TooltipTrigger>
                 <TooltipContent side="bottom" className="text-center">
-                  <p className="text-xs"> пересадка {formatSliderHoursLabel(segment.durationMinutes)} год</p>
+                  <p className="text-xs"> пересадка {formatHoursLabel(segment.stopoverDurationMinutes)} год</p>
                   <p className="text-xs">{airports && airports[segment.arrivalAirportCode].name}</p>
                 </TooltipContent>
               </Tooltip>

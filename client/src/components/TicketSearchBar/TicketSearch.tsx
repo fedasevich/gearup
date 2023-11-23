@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Form } from '@/components/ui/form';
 import { useToast } from '@/components/ui/use-toast';
 import { SEARCH_ROUTE } from '@/libs/constants/routes';
+import { useAppDispatch } from '@/libs/hooks/redux';
+import { resetSearchSlice } from '@/store/reducers/SearchSlice';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ArrowLeftRight } from 'lucide-react';
 import { FieldErrors, useForm } from 'react-hook-form';
@@ -27,7 +29,7 @@ export function TicketSearch() {
   const navigate = useNavigate();
   const { toast } = useToast();
   const { state }: { state: TicketSearchFormData } = useLocation();
-
+  const dispatch = useAppDispatch();
   console.log({
     ...state,
     numberOfAdults: state?.numberOfAdults || 0,
@@ -46,12 +48,7 @@ export function TicketSearch() {
     }
   });
 
-  const {
-    getValues,
-    setValue,
-    handleSubmit
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  } = form;
+  const { getValues, setValue, handleSubmit } = form;
 
   const handleSwapClick = () => {
     const from = getValues('from');
@@ -61,8 +58,11 @@ export function TicketSearch() {
   };
 
   const onSubmit = (data: TicketSearchFormData) => {
+    dispatch(resetSearchSlice());
+
     return navigate(SEARCH_ROUTE, {
-      state: data
+      state: data,
+      replace: true
     });
   };
 

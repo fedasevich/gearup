@@ -22,8 +22,9 @@ export default function SearchPage() {
 
   const filter = useAppSelector((state) => state.searchReducer.filter);
   const searchData = useAppSelector((state) => state.searchReducer.searchData);
-  const [oneWayQuery, { isLoading: oneWayLoading }] = flightApi.useLazyOneWayQuery();
-  const [roundTripQuery, { isLoading: roundTripLoading }] = flightApi.useLazyRoundTripQuery();
+  const [oneWayQuery, { isLoading: oneWayLoading, isFetching: oneWayFetching }] = flightApi.useLazyOneWayQuery();
+  const [roundTripQuery, { isLoading: roundTripLoading, isFetching: roundTripFetching }] =
+    flightApi.useLazyRoundTripQuery();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   if (state === null) {
@@ -51,25 +52,26 @@ export default function SearchPage() {
         .unwrap()
         .then((data) => {
           dispatch(setFilter(prepareInitialFilterState(data.filters)));
-          dispatch(setSearchData(useMergedTicketsData(data).mergedData));
+          dispatch(setSearchData(useMergedTicketsData(data).mergedData.slice(0, 100)));
           dispatch(setAirlines(data.airlines));
           dispatch(setAirports(data.airports));
           dispatch(setStops(data.filters.stops));
         });
     }
-  }, []);
+  }, [state]);
 
   const isLoading = oneWayLoading || roundTripLoading;
+  const isFetching = oneWayFetching || roundTripFetching;
 
   const filteredSearchData = useMemo(() => applyFilters(filter, searchData), [filter]);
 
-  if (isLoading) {
+  if (isLoading || isFetching) {
     return <SearchPageLoader />;
   }
 
   return (
     <div className="mb-4 mt-10 flex items-center justify-center">
-      <div className="2 w-full px-4  md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
+      <div className="w-full px-4  md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:gap-4">
           {!isSheetOpen && (
             <div className="hidden w-3/12 xl:block">
