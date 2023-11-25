@@ -109,7 +109,7 @@ export function PassengerCounter({ title, description, field }: PassengerCounter
   const fieldValue = watch(field);
 
   const handleMinusClick = () => {
-    const decrementedValue = (fieldValue || 0) - 1;
+    const decrementedValue = Math.max((fieldValue || 0) - 1, 0);
     setValue(field, decrementedValue);
   };
 

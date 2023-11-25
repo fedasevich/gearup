@@ -1,11 +1,12 @@
 import { Button } from '@/components/ui/button';
-import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { HIGHEST_YEAR, LOWEST_YEAR } from '@/libs/constants/years';
 import { cn } from '@/libs/helpers/cn';
 import { format } from 'date-fns';
 import { uk } from 'date-fns/locale';
 import { CalendarIcon } from 'lucide-react';
 import { Controller, useFormContext } from 'react-hook-form';
+import { DropdownCalendar } from '../ui/dropdown-calendar';
 import { TicketSearchFormData } from './TicketSearch';
 
 interface TicketDatePickerProps {
@@ -49,7 +50,10 @@ export function TicketDatePicker({ field, title }: TicketDatePickerProps) {
           control={control}
           name={field}
           render={({ field }) => (
-            <Calendar
+            <DropdownCalendar
+              fromYear={LOWEST_YEAR}
+              toYear={HIGHEST_YEAR}
+              captionLayout="dropdown-buttons"
               mode="single"
               selected={field.value as Date}
               onSelect={field.onChange}

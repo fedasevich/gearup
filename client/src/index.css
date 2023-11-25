@@ -135,11 +135,14 @@ footer {
 }
 
 .animate-plane-flight {
-  /* left: 50%; */
   animation: planeFlight 6s linear infinite;
 }
 
 .animate-plane-line {
-  /* width: 50%; */
   animation: planeLineAnimation 6s linear infinite;
+}
+
+.react-international-phone-country-selector-button__button-content {
+  padding-inline: 4px;
+  gap: 5px;
 }

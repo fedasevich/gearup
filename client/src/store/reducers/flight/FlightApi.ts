@@ -1,4 +1,5 @@
 import { Flight } from '@/libs/types/Flight/Flight.type';
+import { OrderPageLocationState, OrderPassengersFormValues } from '@/pages/OrderPage';
 import { api } from '../../api';
 
 interface OneWayParams {
@@ -13,6 +14,10 @@ interface OneWayParams {
 
 interface RoundTripParams extends OneWayParams {
   arrivalDate: string;
+}
+
+interface OrderedFlight extends OrderPassengersFormValues {
+  state: OrderPageLocationState;
 }
 
 export const flightApi = api.injectEndpoints({
@@ -30,6 +35,24 @@ export const flightApi = api.injectEndpoints({
     //     url: `/flight/oneway/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}}`
     //   })
     // }),
+    createFlight: builder.mutation<OrderedFlight, OrderedFlight>({
+      query: (body) => ({
+        url: '/flight',
+        method: 'POST',
+        body
+      })
+    }),
+    deleteFlight: builder.mutation<number, number>({
+      query: (param) => ({
+        url: `/flight/${param}`,
+        method: 'DELETE'
+      })
+    }),
+    getAll: builder.query<OrderedFlight[], unknown>({
+      query: () => ({
+        url: `/flight`
+      })
+    }),
     oneWay: builder.query<Flight, unknown>({
       query: () => ({
         url: `/flight/oneway`

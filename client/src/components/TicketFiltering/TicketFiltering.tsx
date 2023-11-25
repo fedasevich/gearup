@@ -1,4 +1,5 @@
 import { Accordion } from '@/components/ui/accordion';
+import { formatHoursLabel } from '@/libs/helpers/formatHoursLabel';
 import { formatPriceLabel } from '@/libs/helpers/formatPriceLabel';
 import { useAppSelector } from '@/libs/hooks/redux';
 import { TicketFilteringCheckboxListList } from './TicketFilteringCheckboxList';
@@ -17,10 +18,10 @@ export function TicketFiltering() {
       <TicketFilteringCheckboxListList code="airlines" />
       <TicketFilteringCheckboxListList code="originAirports" />
       <TicketFilteringCheckboxListList code="destinationAirports" />
-      {/* <TicketFilteringRangeSlider code="tripDurations" formatLabel={formatSliderHoursLabel} /> */}
+      <TicketFilteringRangeSlider code="tripDurations" formatLabel={formatHoursLabel} />
       <TicketFilteringCheckboxListList code="stops" />
       <TicketFilteringCheckboxListList code="stopoverAirports" />
-      {/* <TicketFilteringRangeSlider code="stopoverDurations" formatLabel={formatSliderHoursLabel} /> */}
+      <TicketFilteringRangeSlider code="stopoverDurations" formatLabel={formatHoursLabel} />
       <TicketFilteringCheckboxListList code="providers" />
     </Accordion>
   );

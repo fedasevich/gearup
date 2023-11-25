@@ -4,14 +4,15 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { ORDER_ROUTE } from '@/libs/constants/routes';
 import { formatPriceLabel } from '@/libs/helpers/formatPriceLabel';
 import { useAppSelector } from '@/libs/hooks/redux';
+import { MergedFlight } from '@/libs/types/Flight/Flight.type';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 interface TicketCardLegPriceProps {
   price: number;
-  ticketId: string;
+  ticket: MergedFlight;
 }
 
-export function TicketCardLegPrice({ price, ticketId }: TicketCardLegPriceProps) {
+export function TicketCardLegPrice({ price, ticket }: TicketCardLegPriceProps) {
   const currency = useAppSelector((state) => state.userReducer.userCurrency);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const user = useAppSelector((state) => state.userReducer.user);
@@ -20,7 +21,7 @@ export function TicketCardLegPrice({ price, ticketId }: TicketCardLegPriceProps)
   const navigate = useNavigate();
 
   const handleBuyClick = () => {
-    navigate(ORDER_ROUTE, { state: { ...state, selectedTicketId: ticketId } });
+    navigate(ORDER_ROUTE, { state: { ...state, selectedTicket: ticket } });
   };
 
   return (

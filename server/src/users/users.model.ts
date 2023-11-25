@@ -8,6 +8,7 @@ import {
   Table,
 } from "sequelize-typescript";
 import { ResetPassword } from "../auth/reset-password/reset-password.model";
+import { Flight } from "../flight/flight.model";
 import { Profile } from "../profile/profile.model";
 
 interface UserCreationAttrs {
@@ -36,4 +37,7 @@ export class User extends Model<User, UserCreationAttrs> {
 
   @HasOne(() => Profile)
   profile: Profile;
+
+  @HasMany(() => Flight)
+  flights: Flight[];
 }

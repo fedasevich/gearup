@@ -1,4 +1,6 @@
+import { cn } from '@/libs/helpers/cn';
 import { FlightLeg } from '@/libs/types/Flight/Flight.type';
+import { ClassValue } from 'clsx';
 import { useMemo } from 'react';
 import { TicketCardLegAirlineImage } from './TicketCardLeg/TicketCardLegAirlineImage';
 import { TicketCardLegAirlineName } from './TicketCardLeg/TicketCardLegAirlineName';
@@ -7,14 +9,15 @@ import TicketCardLegContext from './TicketCardLegContext';
 
 interface TicketCardLegProps {
   leg: FlightLeg;
+  className?: ClassValue;
 }
 
-export function TicketCardLeg({ leg }: TicketCardLegProps) {
+export function TicketCardLeg({ leg, className }: TicketCardLegProps) {
   const memoizedLeg = useMemo(() => ({ leg }), [leg]);
 
   return (
     <TicketCardLegContext.Provider value={memoizedLeg}>
-      <div className="flex flex-col items-center gap-8  only:h-full lg:flex-row">
+      <div className={cn('flex flex-col items-center gap-8  only:h-full lg:flex-row', className)}>
         <TicketCardLegAirlineImage />
         <TicketCardLegAirlineName />
         <TicketCardLegDuration />

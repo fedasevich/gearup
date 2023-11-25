@@ -15,7 +15,7 @@ export function TicketCard({ ticket }: TicketCardProps) {
         ))}
       </div>
       <div className="w-full md:w-3/12 ">
-        <TicketCardLegPrice price={ticket.price.amount} ticketId={ticket.id} />
+        <TicketCardLegPrice price={ticket.price.amount} ticket={ticket} />
       </div>
     </div>
   );
