@@ -14,7 +14,7 @@ import { FlightService } from "./flight.service";
 import { JwtAuthGuard } from "../guards/jwt-auth/jwt-auth.guard";
 import { User } from "../users/users.model";
 import { Flight } from "./flight.model";
-import * as MOCKED_RESPONSE_ONEWAY from "./oneway.json";
+import * as MOCKED_RESPONSE_ONEWAY from "./multiTrip.json";
 
 @Controller("flight")
 export class FlightController {

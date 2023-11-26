@@ -11,8 +11,13 @@ interface TicketCardLegTimelineProps {
 function Timeline({ totalDuration, segments }: TicketCardLegTimelineProps) {
   const airports = useAppSelector((state) => state.searchReducer.airports);
 
-  const calculateSegmentStyle = (segment: Segment) => {
-    const left = (segment.durationMinutes / totalDuration) * 100;
+  const calculateSegmentStyle = (segment: Segment, index: number) => {
+    const leftOffset = segments
+      .filter((segment) => !!segment.stopoverDurationMinutes)
+      .slice(0, index)
+      .reduce((acc, item) => acc + (item.stopoverDurationMinutes + item.durationMinutes), 0);
+    console.log(leftOffset);
+    const left = ((segment.durationMinutes + leftOffset) / totalDuration) * 100;
 
     const width = (segment.stopoverDurationMinutes / totalDuration) * 100;
 
@@ -26,15 +31,15 @@ function Timeline({ totalDuration, segments }: TicketCardLegTimelineProps) {
 
         {segments
           .filter((segment) => !!segment.stopoverDurationMinutes)
-          .map((segment) => (
+          .map((segment, index) => (
             <TooltipProvider delayDuration={0} key={segment.designatorCode}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <div
-                    className="absolute top-[1px] h-[10px] rounded-3xl border-2 bg-secondary text-center"
-                    style={calculateSegmentStyle(segment)}
+                    className="absolute top-[1px] flex h-[10px] rounded-3xl border-2 bg-secondary text-center"
+                    style={calculateSegmentStyle(segment, index)}
                   >
-                    <p className="mt-2 text-xs font-medium text-gray-500">{segment.arrivalAirportCode}</p>
+                    <p className="mt-2 w-full text-xs font-medium text-gray-500">{segment.arrivalAirportCode}</p>
                   </div>
                 </TooltipTrigger>
                 <TooltipContent side="bottom" className="text-center">

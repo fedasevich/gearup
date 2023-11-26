@@ -9,6 +9,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { MAIN_ROUTE } from '@/libs/constants/routes';
 import { useAppDispatch, useAppSelector } from '@/libs/hooks/redux';
+import useInfiniteScroll from '@/libs/hooks/useInfiniteScroll';
 import { setAirlines, setAirports, setFilter, setSearchData, setStops } from '@/store/reducers/SearchSlice';
 import { flightApi } from '@/store/reducers/flight/FlightApi';
 import { format } from 'date-fns';
@@ -20,20 +21,21 @@ export default function SearchPage() {
   const { state } = useLocation();
   const dispatch = useAppDispatch();
 
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const { loadMoreRef, page } = useInfiniteScroll();
+
   const filter = useAppSelector((state) => state.searchReducer.filter);
   const searchData = useAppSelector((state) => state.searchReducer.searchData);
+
   const [oneWayQuery, { isLoading: oneWayLoading, isFetching: oneWayFetching }] = flightApi.useLazyOneWayQuery();
   const [roundTripQuery, { isLoading: roundTripLoading, isFetching: roundTripFetching }] =
     flightApi.useLazyRoundTripQuery();
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   if (state === null) {
     return <Navigate to={MAIN_ROUTE} />;
   }
 
   const { departureDate, arrivalDate } = state as TicketSearchFormData;
-
-  console.log(departureDate);
 
   useEffect(() => {
     const baseRequestData = {
@@ -52,7 +54,7 @@ export default function SearchPage() {
         .unwrap()
         .then((data) => {
           dispatch(setFilter(prepareInitialFilterState(data.filters)));
-          dispatch(setSearchData(useMergedTicketsData(data).mergedData.slice(0, 100)));
+          dispatch(setSearchData(useMergedTicketsData(data).mergedData));
           dispatch(setAirlines(data.airlines));
           dispatch(setAirports(data.airports));
           dispatch(setStops(data.filters.stops));
@@ -64,7 +66,7 @@ export default function SearchPage() {
   const isFetching = oneWayFetching || roundTripFetching;
 
   const filteredSearchData = useMemo(() => applyFilters(filter, searchData), [filter]);
-
+  console.log(filteredSearchData);
   if (isLoading || isFetching) {
     return <Loader />;
   }
@@ -97,7 +99,7 @@ export default function SearchPage() {
             </Sheet>
           </div>
           <div className="w-full xl:w-9/12 ">
-            {filteredSearchData.map((ticket) => (
+            {filteredSearchData.slice(0, page * 10).map((ticket) => (
               <TicketCard ticket={ticket} key={ticket.id} />
             ))}
             {!filteredSearchData.length && (
@@ -113,6 +115,12 @@ export default function SearchPage() {
                 </div>
               </div>
             )}
+            {(!isLoading || !isFetching) &&
+              !(filteredSearchData.slice(0, page * 10).length === filteredSearchData.length) && (
+                <div ref={loadMoreRef} style={{ height: '10px', background: 'transparent' }}>
+                  asdasd
+                </div>
+              )}
           </div>
         </div>
       </div>
