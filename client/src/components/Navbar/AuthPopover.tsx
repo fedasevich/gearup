@@ -4,6 +4,7 @@ import { Label } from '@/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Separator } from '@/components/ui/separator';
 import { toast } from '@/components/ui/use-toast';
+import { ORDERS_ROUTE } from '@/libs/constants/routes';
 import { cn } from '@/libs/helpers/cn';
 import { isErrorWithMessage } from '@/libs/helpers/isErrorWithMessage';
 import { isFetchBaseQueryError } from '@/libs/helpers/isFetchBaseQueryError';
@@ -15,6 +16,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { Loader2, User, UserCog } from 'lucide-react';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 
 const schema = yup.object().shape({
@@ -39,6 +41,7 @@ export function AuthPopover() {
   });
   const dispatch = useAppDispatch();
   const user = useAppSelector((state) => state.userReducer.user);
+  const navigate = useNavigate();
 
   const [signIn, { isLoading: signInIsLoading }] = userApi.useSignInMutation();
   const [signUp, { isLoading: signUpIsLoading }] = userApi.useSignUpMutation();
@@ -106,6 +109,10 @@ export function AuthPopover() {
     dispatch(logOut());
   };
 
+  const handleOrdersClick = () => {
+    navigate(ORDERS_ROUTE);
+  };
+
   const isLoading = signInIsLoading || signUpIsLoading;
 
   return (
@@ -118,8 +125,8 @@ export function AuthPopover() {
             </Button>
           </PopoverTrigger>
           <PopoverContent className="p-4">
-            <Button variant="outline" className="w-full">
-              Переглянути білети
+            <Button variant="outline" className="w-full" onClick={handleOrdersClick}>
+              Переглянути квитки
             </Button>
             <Separator className="my-1" />
             <Button variant="outline" className="w-full" onClick={handleLogoutClick}>

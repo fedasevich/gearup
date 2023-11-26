@@ -3,10 +3,10 @@ import { OrderPrice } from '@/components/OrderPage/OrderPrice';
 import { TicketCardLeg } from '@/components/TicketCard/TicketCardLeg';
 import { TicketSearchFormData } from '@/components/TicketSearchBar/TicketSearch';
 import { toast } from '@/components/ui/use-toast';
-import { MAIN_ROUTE } from '@/libs/constants/routes';
+import { MAIN_ROUTE, ORDERS_ROUTE } from '@/libs/constants/routes';
 import { useAppSelector } from '@/libs/hooks/redux';
 import { useFieldArray, useForm } from 'react-hook-form';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 import { OrderBuyButton } from '@/components/OrderPage/OrderBuyButton';
 import { OrderContactInfo } from '@/components/OrderPage/OrderContactInfo';
@@ -45,6 +45,7 @@ export function OrderPage() {
   const { state }: { state: OrderPageLocationState } = useLocation();
   const user = useAppSelector((state) => state.userReducer.user);
   const orderFormSchema = useOrderFormSchema();
+  const navigate = useNavigate();
 
   const form = useForm<OrderPassengersFormValues>({
     resolver: yupResolver(orderFormSchema),
@@ -84,6 +85,7 @@ export function OrderPage() {
           title: 'Успіх!',
           description: 'Квиток було успішно замовлено'
         });
+        navigate(ORDERS_ROUTE);
       });
   };
 

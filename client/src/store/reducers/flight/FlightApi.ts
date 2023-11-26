@@ -16,42 +16,37 @@ interface RoundTripParams extends OneWayParams {
   arrivalDate: string;
 }
 
-interface OrderedFlight extends OrderPassengersFormValues {
+interface FlightOrdering extends OrderPassengersFormValues {
   state: OrderPageLocationState;
+}
+
+interface OrderedFlight {
+  id: number;
+  flightData: FlightOrdering;
 }
 
 export const flightApi = api.injectEndpoints({
   endpoints: (builder) => ({
-    // oneWay: builder.query<string, OneWayParams>({
-    //   query: ({
-    //     from,
-    //     to,
-    //     departureDate,
-    //     numberOfAdults,
-    //     numberOfChildrens,
-    //     numberOfInfants,
-    //     cabinClass,
-    //   }) => ({
-    //     url: `/flight/oneway/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}}`
-    //   })
-    // }),
-    createFlight: builder.mutation<OrderedFlight, OrderedFlight>({
+    createFlight: builder.mutation<OrderedFlight, FlightOrdering>({
       query: (body) => ({
         url: '/flight',
         method: 'POST',
         body
-      })
+      }),
+      invalidatesTags: ['UserFlights']
     }),
     deleteFlight: builder.mutation<number, number>({
       query: (param) => ({
         url: `/flight/${param}`,
         method: 'DELETE'
-      })
+      }),
+      invalidatesTags: ['UserFlights']
     }),
-    getAll: builder.query<OrderedFlight[], unknown>({
+    getAll: builder.query<OrderedFlight[], void>({
       query: () => ({
         url: `/flight`
-      })
+      }),
+      providesTags: ['UserFlights']
     }),
     oneWay: builder.query<Flight, unknown>({
       query: () => ({

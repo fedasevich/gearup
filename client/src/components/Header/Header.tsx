@@ -1,4 +1,4 @@
-import { ORDER_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
+import { ORDERS_ROUTE, ORDER_ROUTE, SEARCH_ROUTE, SUPPORT_ROUTE } from '@/libs/constants/routes';
 import { cn } from '@/libs/helpers/cn';
 import { useLocation } from 'react-router-dom';
 import { MobileNavbar } from '../Navbar/MobileNavbar';
@@ -8,7 +8,8 @@ import { TicketSearch } from '../TicketSearchBar/TicketSearch';
 export function Header() {
   const location = useLocation();
 
-  const isTitleShown = location.pathname === SUPPORT_ROUTE || location.pathname === ORDER_ROUTE;
+  const isTitleShown =
+    location.pathname === SUPPORT_ROUTE || location.pathname === ORDER_ROUTE || location.pathname === ORDERS_ROUTE;
   const isSearchPage = location.pathname === SEARCH_ROUTE;
 
   return (

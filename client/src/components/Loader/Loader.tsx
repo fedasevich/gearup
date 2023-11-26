@@ -1,6 +1,6 @@
 import { AirplaneIcon } from '@/ui/icons/icons';
 
-export function SearchPageLoader() {
+export function Loader() {
   return (
     <div className="mb-4 mt-10 flex h-screen items-center justify-center">
       <div className="2 w-full px-4  md:w-10/12 md:px-0 lg:w-11/12 xl:w-10/12 2xl:w-3/4">

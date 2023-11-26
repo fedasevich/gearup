@@ -1,4 +1,4 @@
-import { SearchPageLoader } from '@/components/SearchPage/SearchPageLoader';
+import { Loader } from '@/components/Loader/Loader';
 import { TicketCard } from '@/components/TicketCard/TicketCard';
 import { useMergedTicketsData } from '@/components/TicketCard/useMergedTicketsData';
 import { TicketFiltering } from '@/components/TicketFiltering/TicketFiltering';
@@ -66,7 +66,7 @@ export default function SearchPage() {
   const filteredSearchData = useMemo(() => applyFilters(filter, searchData), [filter]);
 
   if (isLoading || isFetching) {
-    return <SearchPageLoader />;
+    return <Loader />;
   }
 
   return (
@@ -83,7 +83,7 @@ export default function SearchPage() {
               <SheetTrigger asChild>
                 <Button
                   variant="secondary"
-                  className="fixed bottom-5 left-1/2 flex -translate-x-1/2 -translate-y-1/2  transform gap-3 font-medium"
+                  className="fixed bottom-5 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform gap-3 font-medium"
                 >
                   <SlidersHorizontal size={20} />
                   Фільтри

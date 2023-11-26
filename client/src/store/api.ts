@@ -11,6 +11,7 @@ export type FetchError = FetchBaseQueryError & {
 };
 
 export const api = createApi({
+  tagTypes: ['UserFlights'],
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
     prepareHeaders: async (headers) => {
