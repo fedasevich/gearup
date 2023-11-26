@@ -40,15 +40,23 @@ export default function SearchPage() {
   useEffect(() => {
     const baseRequestData = {
       ...state,
-      departureDate: format(departureDate, 'yyyy-mm-dd')
+      departureDate: format(departureDate, 'yyyy-MM-dd')
     };
 
     if (arrivalDate) {
       const requestData = {
         ...baseRequestData,
-        arrivalDate: format(arrivalDate, 'yyyy-mm-dd')
+        arrivalDate: format(arrivalDate, 'yyyy-MM-dd')
       };
-      roundTripQuery(requestData);
+      roundTripQuery(requestData)
+        .unwrap()
+        .then((data) => {
+          dispatch(setFilter(prepareInitialFilterState(data.filters)));
+          dispatch(setSearchData(useMergedTicketsData(data).mergedData));
+          dispatch(setAirlines(data.airlines));
+          dispatch(setAirports(data.airports));
+          dispatch(setStops(data.filters.stops));
+        });
     } else {
       oneWayQuery(baseRequestData)
         .unwrap()
@@ -66,7 +74,7 @@ export default function SearchPage() {
   const isFetching = oneWayFetching || roundTripFetching;
 
   const filteredSearchData = useMemo(() => applyFilters(filter, searchData), [filter]);
-  console.log(filteredSearchData);
+
   if (isLoading || isFetching) {
     return <Loader />;
   }

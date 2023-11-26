@@ -1,16 +1,33 @@
 import { Injectable } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
 import { InjectModel } from "@nestjs/sequelize";
+import axios from "axios";
 import { User } from "../users/users.model";
+import { GetOnewayFlightDto } from "./dto/get-oneway-flight.dto";
+import { GetRoundTripFlightDto } from "./dto/get-roundtrip-flight.dto";
 import { Flight } from "./flight.model";
 
 @Injectable()
 export class FlightService {
+  private readonly flightApiKey =
+    this.configService.get<string>("FLIGHT_API_KEY");
   constructor(
     @InjectModel(Flight)
-    private readonly flightModel: typeof Flight
+    private readonly flightModel: typeof Flight,
+    private readonly configService: ConfigService
   ) {}
-  findOneway() {
-    return `This action returns all flight`;
+
+  async findOneway(dto: GetOnewayFlightDto) {
+    console.log(dto);
+    const result = await axios
+      .get<{ data: object }>(
+        `https://api.flightapi.io/onewaytrip/${this.flightApiKey}/${dto.from}/${dto.to}/${dto.departureDate}/${dto.numberOfAdults}/${dto.numberOfChildrens}/${dto.numberOfInfants}/${dto.cabinClass}/USD`,
+        {
+          params: dto,
+        }
+      )
+      .catch((error) => console.log(error));
+    return (result as { data: object }).data;
   }
 
   createFlight(data: object, req: Request & { user: User }): Promise<Flight> {
@@ -30,7 +47,15 @@ export class FlightService {
     return result;
   }
 
-  findRoundTrip() {
-    return `This action returns a  flight`;
+  async findRoundTrip(dto: GetRoundTripFlightDto) {
+    const result = await axios
+      .get<{ data: object }>(
+        `https://api.flightapi.io/roundtrip/${this.flightApiKey}/${dto.from}/${dto.to}/${dto.departureDate}/${dto.arrivalDate}/${dto.numberOfAdults}/${dto.numberOfChildrens}/${dto.numberOfInfants}/${dto.cabinClass}/USD`,
+        {
+          params: dto,
+        }
+      )
+      .catch((error) => console.log(error));
+    return (result as { data: object }).data;
   }
 }

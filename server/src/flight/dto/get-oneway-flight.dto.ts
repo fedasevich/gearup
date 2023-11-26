@@ -15,6 +15,4 @@ export class GetOnewayFlightDto {
   numberOfInfants: string;
   @IsString()
   cabinClass: string;
-  @IsString()
-  currency: string;
 }

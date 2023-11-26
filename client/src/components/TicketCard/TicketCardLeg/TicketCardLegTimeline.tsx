@@ -16,7 +16,7 @@ function Timeline({ totalDuration, segments }: TicketCardLegTimelineProps) {
       .filter((segment) => !!segment.stopoverDurationMinutes)
       .slice(0, index)
       .reduce((acc, item) => acc + (item.stopoverDurationMinutes + item.durationMinutes), 0);
-    console.log(leftOffset);
+
     const left = ((segment.durationMinutes + leftOffset) / totalDuration) * 100;
 
     const width = (segment.stopoverDurationMinutes / totalDuration) * 100;

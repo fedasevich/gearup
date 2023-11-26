@@ -57,12 +57,12 @@ export function AirportCombobox({ destination, field }: AirportComboboxProps) {
   }, [icao]);
 
   const handleSelect = (currentValue: string) => {
-    const [icao] = currentValue.split('.');
-    onIcaoChange(field, icao);
+    const value = currentValue.split('.');
+    onIcaoChange(field, value[value.length - 1]);
     setOpen(false);
   };
 
-  const foundAirportByIcao = icao ? airports.find((airport) => airport.icao === icao.toUpperCase())?.name : null;
+  const foundAirportByIcao = icao ? airports.find((airport) => airport.code === icao.toUpperCase())?.name : null;
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -110,7 +110,7 @@ export function AirportCombobox({ destination, field }: AirportComboboxProps) {
                 value={`${airport.icao}.${airport.name}.${airport.city}.${airport.code}`}
                 onSelect={handleSelect}
               >
-                <Check className={cn('mr-2 h-4 w-4', icao === airport.icao ? 'opacity-100' : 'opacity-0')} />
+                <Check className={cn('mr-2 h-4 w-4', icao === airport.code ? 'opacity-100' : 'opacity-0')} />
                 {airport.name} {airport.icao}
               </CommandItem>
             ))}

@@ -17,6 +17,4 @@ export class GetRoundTripFlightDto {
   numberOfInfants: string;
   @IsString()
   cabinClass: string;
-  @IsString()
-  currency: string;
 }

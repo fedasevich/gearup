@@ -2,8 +2,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 export function SupportPage() {
   return (
-    <div className="flex justify-center px-4 md:px-0">
-      <div className="2 my-10 flex flex-col justify-center  xl:w-10/12">
+    <div className="flex flex-1 justify-center px-4 md:px-0">
+      <div className="my-10 flex flex-col justify-center p-4 md:w-10/12">
         <h1 className="text-center text-4xl font-semibold">Frequently Asked Questions</h1>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">

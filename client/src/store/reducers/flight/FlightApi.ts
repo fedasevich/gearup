@@ -48,11 +48,16 @@ export const flightApi = api.injectEndpoints({
       }),
       providesTags: ['UserFlights']
     }),
-    oneWay: builder.query<Flight, unknown>({
-      query: () => ({
-        url: `/flight/oneway`
+    oneWay: builder.query<Flight, OneWayParams>({
+      query: ({ from, to, departureDate, numberOfAdults, numberOfChildrens, numberOfInfants, cabinClass }) => ({
+        url: `/flight/oneway/${from.toUpperCase()}/${to.toUpperCase()}/${departureDate}/${numberOfAdults}/${numberOfChildrens}/${numberOfInfants}/${cabinClass}`
       })
     }),
+    // oneWay: builder.query<Flight, unknown>({
+    //   query: () => ({
+    //     url: `/flight/oneway`
+    //   })
+    // }),
     roundTrip: builder.query<Flight, RoundTripParams>({
       query: ({
         from,
