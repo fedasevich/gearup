@@ -43,12 +43,12 @@ import { UsersModule } from "./users/users.module";
       models: [Airport, Flight, User, ResetPassword, Profile, Link, LinkType],
       autoLoadModels: true,
       dialectModule: pg,
-      // dialectOptions: {
-      //   ssl: {
-      //     require: true,
-      //     rejectUnauthorized: false,
-      //   },
-      // },
+      dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false,
+        },
+      },
     }),
     UsersModule,
     AuthModule,
