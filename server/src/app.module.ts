@@ -33,10 +33,6 @@ import { UsersModule } from "./users/users.module";
       envFilePath: [".env"],
       isGlobal: true,
     }),
-    // ServeStaticModule.forRoot({
-    //   rootPath: join(__dirname, "..", "/src/", "static"),
-    //   serveRoot: "/static",
-    // }),
     SequelizeModule.forRoot({
       dialect: "postgres",
       host: process.env.POSTGRES_HOST,
