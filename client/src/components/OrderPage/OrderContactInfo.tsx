@@ -58,10 +58,10 @@ export function OrderContactInfo() {
                     [&_.react-international-phone-input]:h-10
                     [&_.react-international-phone-input]:w-full
                     [&_.react-international-phone-input]:rounded-e-md
-                  [&_.react-international-phone-input]:border-input
-                  [&_.react-international-phone-input]:bg-background
-                  [&_.react-international-phone-input]:font-medium
-                  [&_.react-international-phone-input]:text-muted-foreground
+                    [&_.react-international-phone-input]:border-input
+                    [&_.react-international-phone-input]:bg-background
+                    [&_.react-international-phone-input]:font-medium
+                    [&_.react-international-phone-input]:text-muted-foreground
                   "
                     />
                     <FormMessage />

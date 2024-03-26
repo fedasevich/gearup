@@ -20,13 +20,13 @@ export function TicketFilteringRangeSlider({ code, formatLabel }: TicketFilterin
   const state = useAppSelector((state) => state.searchReducer.filter);
 
   const [sliderValue, setSliderValue] = useState<StopoverDurations>({
-    max: state?.[code]?.value?.max || 0,
-    min: state?.[code]?.value?.min || 0
+    max: state?.[code]?.value?.max || -1,
+    min: state?.[code]?.value?.min || -1
   });
   const debouncedValue = useDebounce<StopoverDurations>(sliderValue, 1000);
 
   useEffect(() => {
-    if (!state || !sliderValue.min || !sliderValue.max) return;
+    if (!state || sliderValue.min === -1 || sliderValue.max === -1) return;
 
     dispatch(
       setFilter({
